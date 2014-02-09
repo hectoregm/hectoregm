@@ -1,0 +1,48 @@
+body {
+}
+#header {
+}
+#title {
+}
+#rightColumn, #leftColumn, #content, #footer {
+}
+.clearFloat {
+}
+#footer {
+}
+#credits {
+}
+#footer-menu {
+}
+h1 {
+}
+h2 {
+}
+ul, li {
+}
+.btn, .btn:link {
+}
+.btn:visited {
+}
+.btn:hover {
+}
+.btn:focus {
+}
+.btn:active {
+}
+
+/* Sets the style for links. */
+a, a:link {
+}
+/* Sets the style for visited links. */
+a:visited {
+}
+/* Sets the style for links on mouseover. */
+a:hover {
+}
+/* Sets the style for a link that has focus. */
+a:focus {
+}
+/* Sets the style for a link that is being activated/clicked. */
+a:active {
+}

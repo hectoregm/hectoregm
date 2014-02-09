@@ -1,0 +1,80 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#outerWrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+#contentWrapper {
+}
+#header {
+	padding: 2%;
+}
+#title {
+}
+#rightColumn, #leftColumn, #content, #footer {
+	padding: 10px;
+}
+.clearFloat {
+}
+#footer {
+	height: 1.2em;
+}
+#credits {
+}
+#footer-menu {
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+h1{
+}
+h2{
+}
+ul, li {
+}
+.btn, .btn:link {
+	text-decoration: none;
+}
+.btn:visited {
+	text-decoration: none;
+}
+.btn:hover {
+	text-decoration: none;
+}
+.btn:focus {
+	text-decoration: none;
+}
+.btn:active {
+	text-decoration: none;
+}
+
+a, a:link {
+	text-decoration: none;
+	cursor: pointer;
+}
+/* Sets the style for visited links. */
+a:visited {
+	text-decoration: underline;
+}
+/* Sets the style for links on mouseover. */
+a:hover {
+	text-decoration: underline;
+}
+/* Sets the style for a link that has focus. */
+a:focus {
+}
+/* Sets the style for a link that is being activated/clicked. */
+a:active {
+
+}
