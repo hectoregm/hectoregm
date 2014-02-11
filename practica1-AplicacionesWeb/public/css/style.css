@@ -1,48 +1,92 @@
 body {
+    background-color: #C3CCC4;
+    font-size: 17px;
 }
 #header {
+    background-color: #8A1510;
+    border-bottom: 5px solid black;
 }
 #title {
+    font: bold normal 2em serif;
+    color: #fff;
+    padding-bottom: 1em;
+}
+#rightColumn, #leftColumn, #content {
+    background-color: white;
 }
 #rightColumn, #leftColumn, #content, #footer {
 }
 .clearFloat {
+    clear: both;
+    visibility: hidden;
+    display: none;
 }
 #footer {
+    border-top: 5px solid black;
+    background-color: #8A1510;
 }
 #credits {
+    float: left;
 }
 #footer-menu {
+    float: right;
 }
 h1 {
+    font: bold normal 2em serif;
 }
 h2 {
+    font: bold normal 1.5em serif;
 }
 ul, li {
+    list-style: none;
 }
+
+/* Add other properties for border-radius */
 .btn, .btn:link {
+    font: bold normal 1em san-serif;
+    padding: 0.2em 0.5em;
+    color: #fff;
 }
 .btn:visited {
 }
 .btn:hover {
+    border: 2px solid #81BEF7;
+    border-radius: 5px;
+    color: #585858;
 }
 .btn:focus {
 }
 .btn:active {
+    border: 2px solid #81BEF7;
+    border-radius: 5px;
+    color: #585858;
 }
 
 /* Sets the style for links. */
 a, a:link {
+    font: bold normal 1em san-serif;
+    color: #8088A;
+    position: relative;
+    transition-property: left;
+    transition-duration: 250ms;
+    top: 0;
+    left: 0;
 }
 /* Sets the style for visited links. */
 a:visited {
 }
 /* Sets the style for links on mouseover. */
 a:hover {
+    position: relative;
+    transition-property: left;
+    transition-duration: 250ms;
+    top: 0;
+    left: 1em;
 }
 /* Sets the style for a link that has focus. */
 a:focus {
 }
 /* Sets the style for a link that is being activated/clicked. */
 a:active {
+    color: #819FF7;
 }
