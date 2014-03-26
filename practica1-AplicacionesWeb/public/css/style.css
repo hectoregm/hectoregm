@@ -27,6 +27,7 @@ body {
 }
 #credits {
     float: left;
+    color: #fff;
 }
 #footer-menu {
     float: right;
@@ -39,48 +40,48 @@ h2 {
 }
 ul, li {
     list-style: none;
+    text-align: left;
 }
 
 /* Add other properties for border-radius */
 .btn, .btn:link {
     font: bold normal 1em san-serif;
-    padding: 0.2em 0.5em;
+    padding: 0.2em 0.8em;
     color: #fff;
 }
 .btn:visited {
 }
 .btn:hover {
-    border: 2px solid #81BEF7;
+    border: 2px solid #fff;
     border-radius: 5px;
-    color: #585858;
+    color: #ddd;
 }
 .btn:focus {
 }
 .btn:active {
-    border: 2px solid #81BEF7;
+    border: 2px solid #fff;
     border-radius: 5px;
-    color: #585858;
+    color: #fff;
 }
 
 /* Sets the style for links. */
 a, a:link {
     font: bold normal 1em san-serif;
-    color: #8088A;
+    color: #8A1510;
     position: relative;
-    transition-property: left;
-    transition-duration: 250ms;
-    top: 0;
+    /*transition-property: left;
+    transition-duration: 250ms;*/
+    transition: left 250ms ease 0;
     left: 0;
 }
 /* Sets the style for visited links. */
 a:visited {
+    text-decoration: underline;
 }
 /* Sets the style for links on mouseover. */
 a:hover {
-    position: relative;
-    transition-property: left;
-    transition-duration: 250ms;
-    top: 0;
+    text-decoration: underline;
+    color: #E3231A;
     left: 1em;
 }
 /* Sets the style for a link that has focus. */
@@ -88,5 +89,5 @@ a:focus {
 }
 /* Sets the style for a link that is being activated/clicked. */
 a:active {
-    color: #819FF7;
+    color: #E3231A;
 }
