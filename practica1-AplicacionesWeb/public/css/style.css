@@ -69,8 +69,6 @@ a, a:link {
     font: bold normal 1em san-serif;
     color: #8A1510;
     position: relative;
-    /*transition-property: left;
-    transition-duration: 250ms;*/
     transition: left 250ms ease 0;
     left: 0;
 }
