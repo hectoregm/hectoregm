@@ -30,9 +30,11 @@
     padding: 0;
 }
 #dojo-slideshow {
-    padding-bottom: 50%;
+    height: auto;
+    padding-bottom: 40%;
 }
 #slideshow-desc {
     width: 100%;
-    margin-top: 57%;
+    margin-top: 0;
+    bottom: 0;
 }

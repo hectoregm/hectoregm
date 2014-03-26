@@ -5,12 +5,31 @@
 #menu {
 }
 #rightColumn {
+    visibility: hidden;
+    display: none;
 }
 #leftColumn {
+    width: 22%;
+    float:left;
+    padding: 1%;
 }
 #content {
+    width: 75%;
+    float: right;
+    padding: 0;
+    margin-bottom: 0.5em;
 }
 #dojo-slideshow {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 47%;
 }
 #slideshow-desc {
+    width: 100%;
+    margin-top: 0;
+    bottom: 0;
+}
+#footer {
+    clear: both;
 }
