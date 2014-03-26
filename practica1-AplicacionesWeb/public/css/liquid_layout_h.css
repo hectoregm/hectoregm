@@ -1,16 +1,38 @@
 #header {
+    padding: 0px 0 30px 0px;
+    background-color: #C3CCC4;
+    border: none;
 }
 #title {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    background-color: #fff;
+    color: #000;
 }
 #menu {
+    padding-top: 2em;
+    background-color: #C3CCC4;
+}
+
+#menu a {
+    color: #000;
 }
 #rightColumn {
+    visibility: hidden;
+    display: none;
 }
 #leftColumn {
+    visibility: hidden;
+    display: none;
 }
 #content {
+    width: 100%;
+    padding: 0;
 }
 #dojo-slideshow {
+    padding-bottom: 50%;
 }
 #slideshow-desc {
+    width: 100%;
+    margin-top: 57%;
 }

@@ -16,6 +16,9 @@ body {
 }
 #rightColumn, #leftColumn, #content, #footer {
 }
+#content h1 {
+    padding-top: 0.5em;
+}
 .clearFloat {
     clear: both;
     visibility: hidden;
