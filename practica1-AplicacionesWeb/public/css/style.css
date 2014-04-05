@@ -2,9 +2,13 @@ body {
     background-color: #C3CCC4;
     font-size: 17px;
 }
+#outerWrapper {
+    /*height: 100vh;*/
+}
 #header {
     background-color: #8A1510;
-    border-bottom: 5px solid black;
+    border-bottom: 3px solid black;
+    padding: 2% 0;
 }
 #title {
     font: bold normal 2em serif;
@@ -12,7 +16,7 @@ body {
     padding-bottom: 1em;
 }
 #rightColumn, #leftColumn, #content {
-    background-color: white;
+    background-color: #fff;
 }
 #rightColumn, #leftColumn, #content, #footer {
 }
@@ -25,14 +29,18 @@ body {
     display: none;
 }
 #footer {
-    border-top: 5px solid black;
+    border-top: 3px solid black;
     background-color: #8A1510;
+    padding: 2% 0;
 }
 #credits {
     float: left;
+    width: 20%;
     color: #fff;
 }
 #footer-menu {
+    width: 80%;
+    text-align: right;
     float: right;
 }
 h1 {
@@ -41,7 +49,7 @@ h1 {
 h2 {
     font: bold normal 1.5em serif;
 }
-ul, li {
+ul, ol, li {
     list-style: none;
     text-align: left;
 }
@@ -91,4 +99,32 @@ a:focus {
 /* Sets the style for a link that is being activated/clicked. */
 a:active {
     color: #E3231A;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+
+    #title, h1 {
+        font-size: 22px;
+    }
+
+    #footer, #menu {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.5em;
+    }
+
+    #title, h1 {
+        font-size: 14px;
+    }
+
+    #footer, #menu {
+        font-size: 5px;
+    }
 }

@@ -17,12 +17,13 @@
 #content {
     width: 50%;
     margin-left: 25%;
+    padding: 1%;
 }
 #dojo-slideshow {
     height: auto;
     width: 100%;
     margin: 0;
-    padding-bottom: 47%;
+    padding-bottom: 56%;
 }
 #slideshow-desc {
     width: 100%;
