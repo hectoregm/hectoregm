@@ -46,6 +46,12 @@
     }
 }
 
+@media (max-width: 1024px) and (orientation: landscape) {
+    #leftColumn {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 768px) {
     #leftColumn {
         font-size: 11px;
@@ -53,6 +59,12 @@
 }
 
 @media (max-width: 480px) {
+    #leftColumn {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 568px) and (orientation: landscape) {
     #leftColumn {
         font-size: 6px;
     }
