@@ -5,19 +5,23 @@
 #menu {
 }
 #rightColumn {
-    width: 22%;
-    float:left;
-    padding: 1%;
-}
-#leftColumn {
-    width: 20%;
+    width: 21%;
     float: right;
     padding: 1%;
+    max-height: 99%;
+    margin-bottom: 0.5em;
+}
+#leftColumn {
+    width: 21%;
+    float: left;
+    padding: 1%;
+    max-height: 99%;
+    margin-bottom: 0.5em;
 }
 #content {
-    width: 50%;
-    margin-left: 25%;
-    padding: 1%;
+    margin-left: 24%;
+    width: auto;
+    margin-right: 24%;
 }
 #dojo-slideshow {
     height: auto;
@@ -33,4 +37,22 @@
 
 #footer {
     clear: both;
+}
+
+@media (max-width: 1280px) {
+    #leftColumn, #rightColumn, #content {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    #leftColumn, #rightColumn, #content {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    #leftColumn, #rightColumn, #content {
+        font-size: 6px;
+    }
 }

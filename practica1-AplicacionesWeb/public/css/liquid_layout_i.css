@@ -18,10 +18,17 @@
 }
 #dojo-slideshow {
     height: auto;
-    padding-bottom: 56%;
+    padding-bottom: 40%;
 }
+
 #slideshow-desc {
     width: 100%;
     margin-top: 0;
     bottom: 0;
+}
+
+@media (max-width: 568px) and (orientation: landscape) {
+    #dojo-slideshow {
+        padding-bottom: 35%;
+    }
 }

@@ -1,5 +1,5 @@
 #header {
-    padding: 0px 0 30px 0px;
+    padding: 0px 0px 4%  0px;
     background-color: #C3CCC4;
     border: none;
 }
@@ -10,8 +10,8 @@
     color: #000;
 }
 #menu {
-    padding-top: 2em;
     background-color: #C3CCC4;
+    padding: 1% 0;
 }
 
 #menu a {
@@ -31,10 +31,16 @@
 }
 #dojo-slideshow {
     height: auto;
-    padding-bottom: 56%;
+    padding-bottom: 39%;
 }
 #slideshow-desc {
     width: 100%;
     margin-top: 0;
     bottom: 0;
+}
+
+@media (max-width: 568px) and (orientation: landscape) {
+    #dojo-slideshow {
+        padding-bottom: 34%;
+    }
 }
