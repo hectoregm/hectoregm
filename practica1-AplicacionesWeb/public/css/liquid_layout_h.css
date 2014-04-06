@@ -39,6 +39,16 @@
     bottom: 0;
 }
 
+/* Parte 5a 
+#slideshow-desc {
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+    bottom: 0;
+    right: 0;
+}
+*/
+
 @media (max-width: 568px) and (orientation: landscape) {
     #dojo-slideshow {
         padding-bottom: 34%;

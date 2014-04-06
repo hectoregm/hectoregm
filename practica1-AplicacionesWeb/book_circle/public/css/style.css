@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 1.2em;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #F2E7C5;
+}
+
+#outerWrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#header {
+    border-bottom: 5px solid #A82C3D;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 2em;
+    float: left;
+    padding: 0.25em;
+}
+
+#header .navbar-right {
+    float: right;
+    padding: 0.5em;
+}
+
+#header .form-group {
+    display: inline;
+}
+
+.group:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+.calltoaction {
+    width: 70%;
+    float: left;
+    text-align: center;
+}
+
+.calltoaction img {
+    width: 80%;
+}
+
+.container .signup-form {
+    width: 30%;
+    float: right;
+}
+
+#footer {
+    margin-top: 1%;
+    background-color: #D8AC79;
+    padding: 1%;
+    font-size: 0.5em;
+}
