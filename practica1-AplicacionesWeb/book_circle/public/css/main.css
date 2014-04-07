@@ -1,0 +1,58 @@
+/* Main style */
+#header {
+    border-bottom: none;
+}
+
+#header .actions {
+    float: right;
+    padding: 1%;
+    font-size: 0.75em;
+}
+
+.navbar li {
+    padding-right: 1%;
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.actions a {
+    padding: 10px;
+}
+
+#menu {
+    background-color: #A82C3D;
+    color: #fff;
+}
+
+#menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.75em;
+}
+
+#menu li:hover {
+    background-color: #592E27;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.5em;
+    }
+
+    #title, h1 {
+        font-size: 12px;
+    }
+
+    #footer, #menu {
+        font-size: 10px;
+    }
+}

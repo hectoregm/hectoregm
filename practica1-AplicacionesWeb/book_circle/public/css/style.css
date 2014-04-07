@@ -21,7 +21,7 @@ ul, ol {
 }
 
 #header {
-    /*border-bottom: 5px solid #A82C3D;*/
+    border-bottom: 5px solid #A82C3D;
 }
 
 #header h1 {
@@ -70,48 +70,17 @@ ul, ol {
     font-size: 0.5em;
 }
 
-/* Main style */
-#header .actions {
-    float: right;
-    padding: 1%;
+input, button {
     font-size: 0.75em;
 }
 
-.navbar li {
-    padding-right: 1%;
-    float: left;
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 20px;
+    }
 }
 
-.navbar li a {
-    display: block;
-    text-decoration: none;
-    color: #000;
-    text-align: center;
-}
-
-.actions a {
-    padding: 10px;
-}
-
-#menu {
-    background-color: #A82C3D;
-    color: #fff;
-}
-
-#menu a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.75em;
-}
-
-#menu li:hover {
-    background-color: #592E27;
-}
-
-@media (max-width: 480px) {
+@media (max-width: 568px) {
     body {
         font-size: 0.5em;
     }
@@ -121,6 +90,14 @@ ul, ol {
     }
 
     #footer, #menu {
-        font-size: 10px;
+        font-size: 8px;
+    }
+
+    input, button {
+        font-size: 6px;
+    }
+
+    input {
+        width: 70px;
     }
 }
