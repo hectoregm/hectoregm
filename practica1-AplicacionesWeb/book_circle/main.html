@@ -7,7 +7,7 @@
     <title>Bookclub</title>
     <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
     <link type="text/css" rel="stylesheet" href="public/css/style.css"
-    />
+          />
     <link type="text/css" rel="stylesheet" href="public/css/main.css" />
   </head>
   <body>
@@ -36,23 +36,28 @@
         </ul>
       </div>
       <div class="container group">
-        <div class="calltoaction">
-          <p>Join a book club today</p>
-          <img src="public/images/books-circle.jpg" alt="A circle of books" />
+        <div class="content">
+          <header>Updates</header>
+          <ul class="updates">
+            <li class="group"><img src="public/images/book-cover.jpg" /><p>Friend
+                Foo rated book 5 stars</p></li>
+            <li class="group"><img src="public/images/book-cover2.jpg" /><p>Circle Bar has a reunion next Monday.</p></li>
+          </ul>
         </div>
-        <form class="signup-form" role="form">
-          <h2>Join a club today</h2>
-          <div class="form-group">
-            <input type="text" placeholder="Name" class="form-control">
+        <div class="sidebar">
+          <div class="reading">
+            <header>Currently Reading</header>
+            <div class="current-book group"><img src="public/images/book-cover2.jpg" /><p>The Complete Sherlock Holmes, by Arthur Conan Doyle</p>
+            </div>
           </div>
-          <div class="form-group">
-            <input type="text" placeholder="Email" class="form-control">
+          <div class="recommendations">
+            <header>Recommendations</header>
+            <div class="recommendation
+            group"><img src="public/images/book-cover3.jpg" /><p>Join
+            the club Foo</p>
+            </div>
           </div>
-          <div class="form-group">
-            <input type="password" placeholder="Password" class="form-control">
-          </div>
-          <button type="submit" class="btn btn-success">Sign Up</button>
-        </form>
+        </div>
       </div>
       <div id="footer">
         Hector E. Gomez Morales. Aplicaciones Web 2014-2
