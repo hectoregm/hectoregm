@@ -1,0 +1,38 @@
+.content {
+    background-color: #F2E7C5;
+}
+
+.profile, .books, .clubs {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.container img {
+    width: 30%;
+    float: left;
+    margin-right: 2%;
+}
+
+.container p {
+    font-size: 0.75em;
+    padding: 0.5em;
+    float: left;
+}
+
+.book, .club {
+    padding: 0.5em;
+}
+
+.profile-info, .club-info {
+    width: 70%;
+    float: left;
+}
+
+.profile-info p, .club-info p {
+    float: none;
+}
+
+.container img {
+    width: 20%;
+    float: left;
+}
