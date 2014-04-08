@@ -23,8 +23,8 @@
     padding: 0.5em;
 }
 
-.profile-info, .club-info {
-    width: 70%;
+.profile-info, .book-info, .club-info {
+    width: 75%;
     float: left;
 }
 
@@ -35,4 +35,10 @@
 .container img {
     width: 20%;
     float: left;
+}
+
+@media (max-width: 480px) {
+    .book, .club, .friend {
+        font-size: 8px;
+    }
 }
