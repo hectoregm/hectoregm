@@ -1,0 +1,79 @@
+.container img {
+    width: 30%;
+    float: left;
+    margin-right: 2%;
+}
+
+.updates p {
+    width: 74%;
+}
+
+.content img {
+    width: 20%;
+}
+
+.sidebar img {
+    margin-right: 5%
+}
+
+.reading p, .recommendation p {
+    font-size: 0.75em;
+    padding: 10px;
+}
+
+.updates p {
+    padding: 2%;
+    float: left;
+}
+
+.updates li, .current-book, .recommendation {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 0.8em;
+    }
+
+    .updates p {
+        font-size: 0.7em;
+    }
+
+    .reading p, .recommendation p {
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.5em;
+    }
+
+    #title, h1 {
+        font-size: 12px;
+    }
+
+    #footer, #menu {
+        font-size: 10px;
+    }
+
+    .container {
+        font-size: 10px;
+    }
+
+    .container header {
+        font-size: 7px;
+    }
+
+    .sidebar p {
+        font-size: 6px;
+    }
+
+    .sidebar img {
+        margin-right: 5%
+    }
+    
+    .sidebar p {
+        float: left;
+    }
+}

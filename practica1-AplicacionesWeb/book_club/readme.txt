@@ -1,0 +1,1 @@
+Se hizo la propuesta sobre una red social sobre libros y circulos de lectura. Se tiene que se uso como paleta de colores los colores de una fotografia de libros antiguos en los que predomino los colores ocre y rojizos lo que le da un toque mas serio pero llamativo al sitio.
