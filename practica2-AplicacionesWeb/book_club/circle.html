@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookclub</title>
+    <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bookclub</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">My Clubs</a></li>
+            <li><a href="#">My Books</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <div class="container main-content">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Lean Startup Book Club</h2>
+          <div class="profile">
+            <div class="row">
+              <div class="col-xs-3">
+                <img src="images/book-cover.jpg" />
+              </div>
+              <div class="col-xs-9">
+                <p>This club is focused on all the books about the
+                  lean startup methodologies</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="row">
+              <div class="col-xs-12">
+                <button type="button" class="btn btn-info">Write Post</button>
+                <button type="button" class="btn btn-info">Add Photo</button>
+              </div>
+            </div>
+            <div class="post-form">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+
+          <h2>Activity</h2>
+          <div class="activity">
+            <div class="row">
+              <div class="col-xs-3">
+                <img src="images/book-cover2.jpg" />
+              </div>
+              <div class="col-xs-9">
+                <p>Juanger proposes to read next: The Complete Sherlock Holmes, by Arthur Conan Doyle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <h2>Members</h2>
+          <div class="member">
+            <div class="row">
+              <div class="col-xs-3">
+                <img src="images/friend.jpg" />
+              </div>
+              <div class="col-xs-9">
+                <a href="#">Juanger</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="links">
+            <p><span class="glyphicon glyphicon-book"></span><a href="#">Forum</a></p>
+            <p><span class="glyphicon glyphicon-calendar"></span><a href="#">Calendar</a></p>
+            <p><span class="glyphicon glyphicon-list"></span><a href="#">Archive</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p>Hector E. Gomez Morales. Aplicaciones Web 2014-2</p>
+      </div>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+.profile, .activity, .member, .links {
+    background-color: #fff;
+}
+
+.post, .links {
+    margin-top: 15px;
+}
+
+.member a {
+    font-size: 22px;
+    margin-left: -10px;
+    height: 89px;
+    line-height: 89px;
+}
+
+.links span {
+    margin-left: 15px;
+}
+
+.links p {
+    margin: 0;
+}
+
+.links a {
+    margin-left: 10px;
+}
+
+@media (max-width: 568px) {
+    .main-content h2 {
+        font-size: 20px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+    }
+
+    .friend a {
+        font-size: 16px;
+        height: 66px;
+        line-height: 66px;
+    }
+}
