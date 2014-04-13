@@ -30,8 +30,39 @@ body {
     background-color:rgba(242,231,197,0.3);
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:hover {
     background-color:rgba(242,231,197,0.3);
+}
+
+.navbar-inverse .navbar-nav>li>a:focus {
+    background-color:rgba(242,231,197,0.3);
+}
+
+.main-content {
+    padding-top: 30px;
+}
+
+.main-content ul, .main-content ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-content img {
+    width: 100%;
+}
+
+.main-content h2 {
+    background-color: #592E27;
+    color: #fff;
+    padding: 0.25em;
+    font-size: 25px;
+}
+
+.main-content p {
+    font-size: 20px;
+    padding: 10px 0;
 }
 
 #footer {

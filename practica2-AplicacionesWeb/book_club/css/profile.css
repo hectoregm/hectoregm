@@ -1,0 +1,26 @@
+.profile, .favorite-book, .favorite-club, .friend {
+    background-color: #fff;
+}
+
+.friend a {
+    font-size: 22px;
+    margin-left: -10px;
+    height: 89px;
+    line-height: 89px;
+}
+
+@media (max-width: 568px) {
+    .main-content h2 {
+        font-size: 20px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+    }
+
+    .friend a {
+        font-size: 16px;
+        height: 66px;
+        line-height: 66px;
+    }
+}
