@@ -1,3 +1,63 @@
 html, body { 
     background-color: #F2E7C5;
 }
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar {
+    background-color: #A82C3D;
+}
+
+.navbar-inverse .navbar-brand {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+    background-color:rgba(242,231,197,0.3);
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color:rgba(242,231,197,0.3);
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #D8AC79;
+}
+
+#footer p {
+    margin: 20px;
+}
+
+@media (max-width: 568px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 568px) and (orientation: portrait){
+    body {
+        margin-bottom: 70px;
+    }
+    #footer {
+        height: 80px;
+    }
+}
