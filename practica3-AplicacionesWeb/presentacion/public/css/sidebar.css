@@ -1,0 +1,96 @@
+#sidebar ul, #right-sidebar ul, .nav-help {
+	list-style: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	margin: 0;
+	padding: 0;
+}
+#right-sidebar ul {
+	text-align: center;
+}
+#sidebar ul li {
+	padding: .5em 0;
+	cursor: pointer;
+}
+#right-sidebar ul li {
+	padding: 0;
+	margin-bottom: .2em;	
+}
+#right-sidebar ul hr {
+	width: 2em;
+}
+#right-sidebar ul li > a, #right-sidebar ul li > a:link {
+	text-decoration: none;
+	color: #414356;
+	display: block;
+}
+
+#sidebar ul li > a, #sidebar ul li > a:link {
+	padding: .4em .8em;
+	padding-right: 7em;
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+}
+#sidebar ul li > a img, #sidebar ul li > a:link img, 
+#right-sidebar ul li > a img, #right-sidebar ul li > a:link img {
+	width: 30%;
+	height: auto;
+}
+.nav-right {
+	opacity: 0.5;
+}
+.nav-help {
+	font-size: .6em;
+	opacity: .4;
+}
+.active {
+	pointer-events: none;
+	cursor: default !important;
+	opacity: 1;
+}
+
+.active img {
+	opacity: 1;
+	width: 50% !important;
+	height: auto;
+}
+.active .nav-help {
+	opacity: 1;
+}
+
+#sidebar ul li:hover, #sidebar ul li > a:hover {
+
+	padding-left: 1em;
+	-webkit-transition: padding-left .5s ease-in-out;
+	-moz-transition: padding-left .5s ease-in-out;
+	-o-transition: padding-left .5s ease-in-out;
+	-ms-transition: padding-left .5s ease-in-out;
+	transition: padding-left .5s ease-in-out;
+	
+}
+.nav-main:hover {
+
+	background: #000;
+}
+.nav-right:hover {
+	padding-left: .5em;
+	opacity: 1;
+	-webkit-transition: opacity, padding-left .5s ease-in-out;
+	-moz-transition: opacity, padding-left .5s ease-in-out;
+	-o-transition: opacity, padding-left .5s ease-in-out;
+	-ms-transition: opacity, padding-left .5s ease-in-out;
+	transition: opacity, padding-left .5s ease-in-out;
+}
+
+#right-sidebar ul li:hover .nav-help, #right-sidebar ul li:hover > a:hover .nav-help {
+	opacity: 1;
+	-webkit-transition: opacity ease-in-out;
+	-moz-transition: opacity ease-in-out;
+	-o-transition: opacity ease-in-out;
+	-ms-transition: opacity ease-in-out;
+	transition: opacity ease-in-out;
+}
+
+
+

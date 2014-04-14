@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Ejemplo HTML5 - Aplicaciones Web</title>
+    <meta name="viewport" content="width=device-width  initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/main.css" />
+    <link rel="stylesheet" href="public/css/menu.css" />
+    <link rel="stylesheet" href="public/css/app.css" />
+    <link rel="stylesheet" href="public/css/backgrounds.css" />
+
+    <link rel="shortcut icon"    href="public/img/html5-ico.png" />
+    <link rel="apple-touch-icon" href="public/img/html5-ico.png" />
+
+    <script src="public/js/change_page.js"></script>
+
+  </head>
+
+  <body>
+    <nav id="main-navbar">
+      <ul class="main-menu">
+        <li>
+          <a href="javascript:change_page('index')">Inicio</a>
+        </li>
+        <li>
+          <a href="#">Multimedia</a>
+          <ul class="main-submenu">
+            <li>
+              <a href="javascript:change_page('formulario')">formulario</a>
+            </li>
+            <li>
+              <a href="javascript:change_page('multimedia')">multimedia</a>
+            </li>
+            <li>
+              <a href="javascript:change_page('multimediaAdv')">mult. avanzado</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Nuevas APIS</a>
+          <ul class="main-submenu">
+
+            <li>
+              <a href="javascript:change_page('canvas')">canvas</a>
+            </li>
+            <li class="btn">
+              <a href="javascript:change_page('geolocation')">geolocalizacion</a>
+            </li>
+            <li class="btn">
+              <a href="javascript:change_page('storage-db')">almacenamiento</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Animaciones</a>
+          <ul class="main-submenu">
+            <li class="btn">
+              <a href="javascript:change_page('dragdrop-ajax')">Drag &amp; Drop</a>
+            </li>
+            <li class="btn">
+              <a href="javascript:change_page('css')">Anim</a>
+            </li>
+            <li class="btn">
+              <a href="javascript:change_page('cssAdv')">Anim Adv</a>
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="index" class="main-container active">
+      <!-- El encabezado principal de nuestra página -->
+      <figure class="example pull-right">
+
+        <table  class="sec-table">
+          <tbody>
+            <tr>
+              <td><a class="table-link" href="javascript:change_page('formulario')"> Formularios</a></td>
+              <td><a class="table-link" href="javascript:change_page('multimedia')">Multimedia</a></td>
+              <td><a class="table-link" href="javascript:change_page('multimediaAdv')">Multimedia <br>Avanzado</a></td>
+            </tr>
+            <tr>
+              <td><a class="table-link" href="javascript:change_page('canvas')">Canvas y<br> Web Workers</a></td>
+              <td><a class="table-link" href="javascript:change_page('geolocation')">Geolocalización</a></td>
+              <td><a class="table-link" href="javascript:change_page('storage-db')">Storage e<br>IndexedDB</a></td>
+            </tr>
+            <tr>
+              <td><a class="table-link" href="javascript:change_page('dragdrop-ajax')">Drag &amp; Drop y<br>AJAX</a></td>
+              <td><a class="table-link" href="javascript:change_page('css')">Animaciones</a></td>
+              <td><a class="table-link" href="javascript:change_page('cssAdv')">Animaciones <br>Avanzadas</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </figure>
+
+      <article class="info">
+        <nav class="sections group">
+          <div class="next">
+            <a href="javascript:change_page('formulario')">Formularios &gt;&gt;</a>
+          </div>
+        </nav>
+        <header class="header">
+          <h1>HTML5</h1>
+        </header>
+        <p>
+          Bienvenido a nuestra primer aplicación en HTML5
+        </p>
+        <p>
+          Aquí mostraremos algunos ejemplos acerca del uso de algunas de las APIs que integran
+          la nueva especificación de
+          <mark>
+            HTML5
+          </mark>
+        </p>
+        <p>
+          Por el momento, el espacio a la derecha muestra un menú con opciones
+        </p>
+      </article>
+
+    </section>
+
+
+    <!-- Sección de ejmplo -->
+    <section id="semantica" class="main-container">
+      <figure class="example pull-right">
+
+      </figure>
+
+      <article class="info">
+        <header class="header">
+          <h2>Estructura Semántica</h2>
+        </header>
+        <p>
+          Este es un ejemplo de una sección con estructura semántica,
+          en donde diferencimos cada una de las secciones con distintos colores
+        </p>
+      </article>
+    </section>
+
+    <section id="formulario" class="main-container">
+      <figure class="example pull-right">
+
+      </figure>
+
+      <article class="info">
+        <nav class="sections group">
+          <div class="prev">
+            <a href="javascript:change_page('index')">&lt;&lt; Inicio</a>
+          </div>
+          <div class="next">
+            <a href="javascript:change_page('multimedia')">Multimedia &gt;&gt;</a>
+          </div>
+        </nav>
+
+        <header class="header">
+          <h2>API de Formularios</h2>
+        </header>
+        <p>
+          En esta sección mostraremos algunos de los nuevos campos agregados a la
+          especificación, y un ejemplo de validaciones asíncronas realizadas con
+          los nuevos elementos de la API
+        </p>
+      </article>
+
+    </section>
+
+    <section id="multimedia" class="main-container">
+
+      <figure class="example pull-right">
+
+        <div style="height: 30%;">
+          <audio controls >
+            <source src="public/media/howl.mp3" type="audio/mpeg" />
+
+            <p> Tu navegador no soporta audio de forma nativa.</p>
+          </audio>
+        </div>
+
+        <div style="height: 30%;">
+          <video poster="public/img/html5-logo.png" controls width="420" height="200">
+            <source src="public/media/howl.ogv" type='video/ogg; codecs="theora,vorbis"'/>
+            <source src="public/media/howl.webm" type='video/webm'/>
+            <source src="public/media/howl.mp4" type='video/mp4' />
+
+            <p>
+              tu navegador no soporta video de forma nativa
+            </p>
+          </video>
+        </div>
+
+      </figure>
+
+      <article class="info">
+        <nav class="sections group">
+          <div class="prev">
+            <a href="javascript:change_page('formulario')">&lt;&lt; Formularios</a>
+          </div>
+          <div class="next">
+            <a href="javascript:change_page('multimediaAdv')">Multimedia Adv &gt;&gt;</a>
+          </div>
+        </nav>
+
+        <header class="header">
+          <h2>Multimedia</h2>
+        </header>
+        <p>
+          En la nueva especificación se tiene soporte para audio y video y en est sección mostraremos un uso básico de estos elementos
+        </p>
+        <p>
+          Para agregar audio hacemos uso del tag <code>
+            &lt;audio&gt;</code>
+          y especificamos dentro la ubicación de nuestro archivo con el tag <code>
+            &lt;source&gt;</code>
+          <br>
+          Podemos definir ademas el ancho que queremos que tenga nuestro reproductor,
+          si queremos que automáticamente inicie la reproducción o si queremos que se muestren los controles
+        </p>
+        <p>
+          Para agregar video hacemos uso del tag <code>
+            &lt;video&gt;</code>
+          y especificamos dentro la ubicación de nuestro archivo con el tag <code>
+            &lt;source&gt;</code>
+          <br>
+          Podemos definir ademas el ancho y alto que queremos que tenga nuestro reproductor,
+          si queremos que automáticamente inicie la reproducción o si queremos que se muestren los controles
+        </p>
+        <p>
+          Todos estos elementos se pueden personalizar o modificar mediante <strong>Javascript</strong>
+          <br>
+          Tenga en cuenta que no todos los formatos son soportados por los navegadores y que algunos de ellos
+          (navegadores) no soportan estos tags
+        </p>
+      </article>
+
+    </section>
+    <section id="multimediaAdv" class="main-container">
+      <figure class="example pull-right">
+
+      </figure>
+
+      <article class="info">
+        <nav class="sections group">
+          <div class="prev">
+            <a href="javascript:change_page('multimedia')">&lt;&lt; Multimedia</a>
+          </div>
+          <div class="next">
+            <a href="javascript:change_page('canvas')">Canvas &gt;&gt;</a>
+          </div>
+        </nav>
+        <header class="header">
+          <h2>Ejemplo Avanzado de Multimedia</h2>
+        </header>
+        <p>
+
+        </p>
+      </article>
+    </section>
+
+    <section id="canvas" class="main-container">
+      <figure class="example pull-right">
+        <canvas width="400" height="400">
+          <p>
+            Tu navegador no soporta canvas de HTML5
+          </p>
+        </canvas>
+      </figure>
+
+      <article class="info">
+        <nav class="sections group">
+          <div class="prev">
+            <a href="javascript:change_page('multimediaAdv')">&lt;&lt;
+            Multimedia Adv</a>
+          </div>
+          <div class="next">
+            <a href="javascript:change_page('geolocation')">Geolocalizacion &gt;&gt;</a>
+          </div>
+        </nav>
+        <header class="header">
+          <h2>Canvas &amp; WebWorker</h2>
+        </header>
+        <p>
+          En esta sección mostraremos el uso de la API para dibujar. En esta ocasión
+          generaremos una imagen (fractal) de manera automática
+        </p>
+      </article>
+    </section>
+
+    <section id="geolocation" class="main-container">
+      <figure class="example pull-right">
+
+      </figure>
+
+      <article class="info">
+        <nav class="sections group">
+          <div class="prev">
+            <a href="javascript:change_page('canvas')">&lt;&lt; Canvas</a>
+          </div>
+          <div class="next">
+            <a href="javascript:change_page('storage-db')">Almacenamiento &gt;&gt;</a>
+          </div>
+        </nav>
+        <header class="header">
+          <h2>Geolocalización</h2>
+        </header>
+        <p>
+          En esta sección haremos uso de la API de Geolocalización y Google Maps
+          para mostrar un mapa con tu ubicación actual
+        </p>
+      </article>
+    </section>
+
+    <section id="storage-db" class="main-container">
+      <figure class="example pull-right">
+
+      </figure>
+
+      <article class="info">
+        <nav class="sections group">
+          <div class="prev">
+            <a href="javascript:change_page('geolocation')">&lt;&lt; Geolocalizacion</a>
+          </div>
+          <div class="next">
+            <a href="javascript:change_page('dragdrop-ajax')">Drag
+            &amp; Drop &gt;&gt;</a>
+          </div>
+        </nav>
+        <header class="header">
+          <h2>Storage e IndexedBD </h2>
+        </header>
+        <p>
+          En esta sección mostraremos (de manera simple) la capacidad de almacenamiento
+          en HTML5. <br>
+          Ingresa datos en el formulario y envialos.<br>
+          Prueba actualizar la página o cerrar el navegador y después volverlo a abrir en
+          esta sección y comprueba que los datos aún sean persistentes
+        </p>
+      </article>
+    </section>
+
+    <section id="dragdrop-ajax" class="main-container">
+      <figure class="example pull-right">
+
+      </figure>
+
+      <article class="info">
+        <nav class="sections group">
+          <div class="prev">
+            <a href="javascript:change_page('storage-db')">&lt;&lt; Almacenamiento</a>
+          </div>
+          <div class="next">
+            <a href="javascript:change_page('css')">Animaciones &gt;&gt;</a>
+          </div>
+        </nav>
+        <header class="header">
+          <h2>Drag &amp; Drop y AJAX</h2>
+        </header>
+        <p>
+
+        </p>
+      </article>
+    </section>
+
+    <section id="css" class="main-container">
+      <figure class="example pull-right">
+
+      </figure>
+
+      <article class="info">
+        <nav class="sections group">
+          <div class="prev">
+            <a href="javascript:change_page('dragdrog-ajax')">Drag &amp; Drop &gt;&gt;</a>
+          </div>
+          <div class="next">
+            <a href="javascript:change_page('cssAdv')">Animaciones Adv
+            &gt;&gt;</a>
+          </div>
+        </nav>
+        <header class="header">
+          <h2>Animaciones Básicas</h2>
+        </header>
+        <p>
+
+        </p>
+      </article>
+    </section>
+
+
+
+    <section id="cssAdv" class="main-container">
+      <figure class="example pull-right">
+        <img class="nube-1" src="public/img/nube.png" alt="">
+        <img class="nube-2" src="public/img/nube.png" alt="">
+        <img class="nube-3" src="public/img/nube.png" alt="">
+        <img class="nube-4" src="public/img/nube.png" alt="">
+        <img class="nube-5" src="public/img/nube.png" alt="">
+        <img class="nube-6" src="public/img/nube.png" alt="">
+
+        <img class="fondo-animado" src="public/img/campo1.jpg" alt="">
+      </figure>
+
+      <article class="info">
+        <nav class="sections group">
+          <div class="prev">
+            <a href="javascript:change_page('css')">Animaciones &gt;&gt;</a>
+          </div>
+          <div class="next">
+            <a href="javascript:change_page('index')">Inicio &gt;&gt;</a>
+          </div>
+        </nav>
+        <header class="header">
+          <h2>Animaciones Avanzadas</h2>
+        </header>
+        <p>
+
+        </p>
+      </article>
+    </section>
+
+
+
+
+
+    <aside class="no-visible">
+      <!--Definimos contenido adicional al contenido principal -->
+
+      <!-- El contenido de esta sección la omitiremos de momento -->
+      <p>
+        sección con contenido adicional
+      </p>
+    </aside>
+    <footer class="no-visible">
+      <!-- Aqui definimos el pie de página general -->
+      <p>
+        Práctica de HTML5 del seminario de Aplicaciones Web
+      </p>
+    </footer>
+  </body>
+</html>

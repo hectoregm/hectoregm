@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>HTML5 - Aplicaciones Web</title>
+		<meta name="description" content="Practica 4, Aplicaciones Web" />
+		<meta name="author" content="Ramirez González Juan José" />
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<link rel="stylesheet" href="public/css/media.css" />
+		<link rel="stylesheet" href="public/css/main.css" />
+		<link rel="stylesheet" href="public/css/style.css" />
+		<link rel="stylesheet" href="public/css/sidebar.css" />
+		<link rel="stylesheet" href="public/css/img_html5.css" />
+		<link rel="stylesheet" href="public/css/preview.css" />
+
+		<link rel="shortcut icon" href="public/img/html5-ico.png" />
+		<link rel="apple-touch-icon" href="public/img/html5-ico.png" />
+		<!--[if lt IE 9]>
+		<script src="public/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<nav id="sidebar"  class="img-html5">
+			<ul>
+				<li class="nav-main">
+					<a  href="#web">Web</a>
+				</li>
+				<li class="nav-main">
+					<a  href="#html5">HTML5</a>
+				</li>
+				<li class="nav-main">
+					<a  href="#features">Nuevas Caracteristicas</a>
+				</li>
+				<li class="nav-main">
+					<a  href="#structure">Estructura</a>
+				</li>
+				<li>
+					<a  href="#elements">Elementos</a>
+				</li>
+				<li>
+					<a  href="#example">Ejemplo</a>
+				</li>
+				<li>
+					<a  href="#exercises">Ejercicios</a>
+				</li>
+				<li>
+					<a href="#apis">Nuevas APIS</a>
+				</li>
+
+			</ul>
+		</nav>
+
+		<nav id="right-sidebar">
+			<ul>
+				<li>
+					<a href="index.html"> <img class="nav-right" src="public/img/star.png" />
+					<p class="nav-help">
+						Inicio
+					</p></a>
+				</li>
+
+				<hr>
+
+				<li>
+					<a  class="active" href="html5.html"> <img class="nav-right" src="public/img/html5-ico.png" />
+					<p class="nav-help">
+						Html5
+					</p> </a>
+				</li>
+				<li>
+					<a  href="semantics.html"> <img class="nav-right" src="public/img/HTML5_32/Semantics.png" />
+					<p class="nav-help">
+						Semantica
+					</p> </a>
+				</li>
+				<li>
+					<a  href="offline.html"> <img class="nav-right" src="public/img/HTML5_32/Offline_Storage.png" />
+					<p class="nav-help">
+						Offline
+					</p></a>
+				</li>
+				<li>
+					<a  href="device-access.html"> <img class="nav-right" src="public/img/HTML5_32/Device_Access.png" />
+					<p class="nav-help">
+						Acceso
+					</p></a>
+				</li>
+				<li>
+					<a  href="connectivity.html"> <img class="nav-right" src="public/img/HTML5_32/Connectivity.png" />
+					<p class="nav-help">
+						Conectividad
+					</p></a>
+				</li>
+				<li>
+					<a  href="multimedia.html"> <img class="nav-right" src="public/img/HTML5_32/MultiMedia.png" />
+					<p class="nav-help">
+						Multimedia
+					</p></a>
+				</li>
+				<li>
+					<a  href="graphics.html"> <img class="nav-right" src="public/img/HTML5_32/3D_Effects.png" />
+					<p class="nav-help">
+						Gráficos
+					</p></a>
+				</li>
+				<li>
+					<a  href="performance.html"> <img class="nav-right" src="public/img/HTML5_32/Performance.png" />
+					<p class="nav-help">
+						Rendimiento
+					</p></a>
+				</li>
+				<li>
+					<a  href="styling.html"> <img class="nav-right" src="public/img/HTML5_32/Styling.png" />
+					<p class="nav-help">
+						Estilo
+					</p></a>
+				</li>
+				<hr>
+				<li>
+					<a  href="practica4.html"> <img class="nav-right" src="public/img/right.png" />
+					<p class="nav-help">
+						Práctica 4
+					</p></a>
+				</li>
+
+			</ul>
+		</nav>
+
+		<div id="outerWrapper">
+			<header id="main-header" class="img-html5">
+				<img id="header-img" src="public/img/html5-white.png"
+				title="" />
+			</header>
+
+			<div class="content">
+
+				<section id="web">
+					<header >
+						<h1 class="title-section img-html5">Evolucion de la Web</h1>
+					</header>
+					<div class="content-section">
+						<div class="info-section full">
+							<h3>Web 1.0: Web Estática</h3>
+							<p>
+
+								En la década de los 90's se difundió y consolidó la primera versión disponible de la
+								Web: Web 1.0.
+								<br>
+								Esta versión consistía en documentos cuyo contenido y formato era estático.
+							</p>
+							<h5>Características:</h5>
+							<ul>
+								<li>
+									uso de framesets o marcos
+								</li>
+								<li>
+									Uso de extensiones
+									<code>
+										HTML1
+									</code>
+								</li>
+								<li>
+									Uso del formato
+									<code>
+										GIF
+									</code>
+									para imágenes con resoluciones bajas
+								</li>
+								<li>
+									Involucran al usuario solo como observador
+								</li>
+								<li>
+									Dedicado principalmene a instituciones gubernamentales, educativas, empresas
+									(que tienen infraestructura necesria)
+								</li>
+							</ul>
+							<h3>Web 2.0: Web dinámica</h3>
+							<p>
+
+								En el 2003 aparece la Web 2.0 donde todas las aplicaciones y sitios tienen como
+								característica principal al usuario como elemento principal de interacción.
+								<br>
+								Con la aparición de nuevos lenguajes de programación diseñados para desarrollo Web
+								(como
+								<code>
+									ASP3
+								</code>
+								o
+								<code>
+									PHP4
+								</code>), se crean páginas dinámicas, permitiendo
+								la actualización y modificaión frecuente del contenido.
+							</p>
+							<h5>Características:</h5>
+							<ul>
+								<li>
+									Propósito general: desarrollo y difundir herramientas útiles para el
+									usuario promedio o no especializado
+								</li>
+								<li>
+									Infraestructura basada en:
+									<ul>
+										<li>
+											Proporcionar software que atiende y procesa solicitudes (Servidor)
+										</li>
+										<li>
+											Navegadores que se apoyen enlos estándares definidos
+										</li>
+										<li>
+											Diseño de protocolos para paso de mensajes
+										</li>
+										<li>
+											Desarrollo de aplicaciones destinadas a usuarios finales
+										</li>
+										<li>
+											Desarrollo basado en el contenido
+										</li>
+									</ul>
+								</li>
+								<li>
+									Capacidad para almacenar información, proporcionar contenidos visibles y permitir
+									a los usuarios acceder a ellos
+								</li>
+								<li>
+									Dirigido a todo público
+								</li>
+							</ul>
+							<blockquote>
+								Cada programa, aplicación o lenguaje debe
+								ser lo suficientemente atractivo y sencillo como para que cada individuo aprenda a
+								manejarlo de forma rápida y efectiva.
+							</blockquote>
+							<h3>Web 3.0: Web Inteligente</h3>
+							<p>
+
+								¿Quién dijo que todo termina en la Web 2.0? Los especialistas –programadores,
+								científicos, y sobre todo los fanáticos internautas– siguen hoy en día imaginando
+								una
+								Basados en la idea de constuir una Web inteligente mediante una red superior a la actual,
+								complementando la capacidaddes de la Web 2.0
+								con nuevas y mejores propuestas e innovaciones para ofrecer al usuario,
+								la propuesta de los especialistas de construir una
+								<strong>
+								<mark>
+									Web semántica
+								</mark></strong> parece ser  la respuesta.
+							</p>
+							<h5>Características:</h5>
+							<ul>
+								<li>
+									Funcionamiento de agentes computarizados (programas)
+									capaces de almacenar información, interpretarla y
+									relacionarla de manera significativa
+								</li>
+								<li>
+									Incorporar componentes semánticos (aplicaciones) que realien procesamiento
+									de información de forma automática
+								</li>
+								<li>
+									Desarrollo de nuevas técnicas y paradigmas para representar la información,
+									su localización, su circulación, su integración y su recuperación.
+								</li>
+							</ul>
+							<blockquote>
+								Sobre esto ya existen algunos avances: ejemplos son
+								<abbr title="Extensible Markup Language">XML</abbr> y <abbr title="Resource Description Framework">RDF</abbr>.
+							</blockquote>
+						</div>
+
+					</div>
+				</section>
+
+				<section id="html5">
+					<header>
+						<h1 class="title-section img-html5">HTML5</h1>
+					</header>
+					<div class="content-section">
+						<div class="info-section full">
+							<p>
+								Dado que la versión anterior de <abbr title="HTML 4.01">HTML</abbr> fue producida en 1999,
+								la web ha cambiado mucho desde aquellos años.
+								<br>
+								<mark>
+									<abbr title=" HyperText Markup Language, version 5">HTML5</abbr>
+								</mark>
+								es la nueva especificación (estándar) para HTML. Es una colaboración entre el Consorcio
+								<abbr title="World Wide Web">W3C</abbr> y <abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr>.
+							</p>
+							<p>
+								WHATWG trabajaba con una especificación para formularios web y aplicaciones, y la W3C
+								estaba trabajando en la especificación para
+								<code>
+									XHTML 2.0
+								</code>. En 2006, decidieron
+								cooperar y crear una nueva versión de HTML, estableciendo los siguientes ejes de trabajo:
+
+								<ul>
+									<li>
+										Las nuevas características se deben basar en
+										<code>
+											HTML
+										</code>
+										,
+										<code>
+											CSS
+										</code>
+										,
+										<code>
+											DOM
+										</code>
+										y
+										<code>
+											JavaScript
+										</code>
+									</li>
+									<li>
+										Reducir la necesidad de plugins externos
+									</li>
+									<li>
+										Un mejor manejo de errores
+									</li>
+									<li>
+										Mayor marcado (uso de etiquetas) de contenido para reemplazar el scripting actual
+									</li>
+									<li>
+										Debe ser independiente del dispositivo
+									</li>
+									<li>
+										Proceso de desarrollo debe ser visible para el público
+									</li>
+								</ul>
+
+							</p>
+							<h3>sobre html5</h3>
+							<p>
+								Se ha especificado dos variantes de sintaxis para HTML5:
+								<ul>
+									<li>
+										<strong>HTML5</strong>: HTML por "defecto" (
+										<code>
+											text/html
+										</code>) conocida
+										como HTML5
+									</li>
+									<li>
+										<strong>XHTML5</strong>: manejada como XML
+
+										(
+										<code>
+											application/xhtml+xml
+										</code>
+										) conocida como sintaxis XHTML5
+									</li>
+								</ul>
+							</p>
+							<p>
+								Es importante  aclarar que no es simplemente una nueva versión del HTML, HTML5 es una conjunto
+								de diversas especificaciones (tanto herramientas como estándares) en torno al desarrollo Web.
+								Esta diseñado como un framework para apoyar la
+								innovación y fomentar el potencial que ofrece la web
+							</p>
+							<p>
+								Así HTML5 es una nueva versión de diversas especificaciones, entre las que se encuentran:
+								<ul>
+									<li>
+										una versión mejorada de
+										<code>
+											HTML 4
+										</code>
+									</li>
+									<li>
+										una versión mejorada de
+										<code>
+											XHTML 1
+										</code>
+									</li>
+									<li>
+										una versión mejorada de
+										<code>
+											<abbr title="Document Objetc Model">DOM 2</abbr>
+										</code>
+
+									</li>
+								</ul>
+							</p>
+							<p>
+								Con la nueva especificación, HTML 5 pretende proporcionar una plataforma para el
+								desarrollo de aplicaciones Web más parecidas a las aplicaciones de escritorio,
+								en donde la ejecución de estos no implique falta de recursos o facilidades para
+								resolver las necesidades reales de los desarrolladores.
+							</p>
+							<p>
+								Para ello se están creando APIs que permitan trabajar con cualquiera de los elementos de
+								la página y realizar acciones de forma nativa, con la intención que cualquier navegador
+								siga los estándares, facilitanto el desarrollo y uso tanto por parte de los
+								desarrolladores como de los usuarios, incrementando la compatibilidad con los navegadores
+								y la posibilidad de un mejor acceso a sistemas/aplicaciones/páginas.
+							</p>
+							<blockquote>
+								HTML5 es todavía un trabajo en progreso. Sin embargo, los principales navegadores son
+								compatibles	con muchos de los nuevos elementos de HTML5 y APIs.
+							</blockquote>
+						</div>
+
+					</div>
+				</section>
+
+				<section id="features">
+					<header>
+						<h1 class="title-section img-html5">Nuevas Características</h1>
+					</header>
+					<div class="content-section">
+						<div class="info-section full">
+							<p>
+								Algunas de las nuevas características de HTML5:
+							</p>
+							<ul>
+								<li>
+									Nuevos elementos de contenido específico, algunos basados en la idea de web semántica.
+								</li>
+								<li>
+									Soporte para almacenamiento local
+								</li>
+								<li>
+									Elementos para generación de gráficos
+								</li>
+								<li>
+									Nuevos controles de formulario, como el calendario, la fecha, la hora, email, URL, búsqueda
+								</li>
+								<li>
+									Elementos para reproducción de elementos multimedia
+								</li>
+								<li>
+									Elementos para acceso a componentes y características de dispositivos
+								</li>
+								<li>
+									Integración de técnicas y tecnologías para accelerar tiempos de espera
+								</li>
+								<li>
+									Soporte de una gran variedad de estilos y efectos
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+				</section>
+
+				<section id="structure">
+					<header>
+						<h1 class="title-section img-html5">Estructura</h1>
+					</header>
+
+					<div class="content-section">
+						<span class="info-section middle pull-right"> HTML5 esta pensado para estructurar nuestras páginas de forma más simple.
+
+							En la versión anterior necesitabamos crear una estructura básica commo la siguiente: </span>
+
+						<div class="src-section middle pull-left page-web">
+							<pre>
+&lt;!DOCTYPE 
+  HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd"&gt;
+
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+
+  &lt;head&gt;
+  
+    &lt;meta http-equiv="Content-Type" 
+         content="text/html; charset=utf-8" /&gt;
+    &lt;title&gt;New Web Project&lt;/title&gt;
+    &lt;meta name="description" content="" /&gt;
+    &lt;meta name="author" content="" /&gt;
+	
+  &lt;/head&gt;
+	
+  &lt;body&gt;
+	
+     &lt;h1&gt;New Web Project Page&lt;/h1&gt;
+     
+     &lt;p&gt;content here!&lt;/p&gt;
+		
+  &lt;/body&gt;
+	
+&lt;/html&gt;	
+</pre>
+						</div>
+
+					</div>
+
+					<br class="clearFloat" />
+
+					<div class="content-section">
+
+						<span class="info-section middle pull-left"> la estructura básica de un HTML mediante el nuevo estandar es la siguiente: </span>
+
+						<div class="src-section middle pull-right page-web">
+							<pre>
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en"&gt;
+
+  &lt;head&gt;
+  
+    &lt;meta charset="utf-8" /&gt;
+	&lt;meta http-equiv="X-UA-Compatible" 
+	     content="IE=edge,chrome=1" /&gt;
+    &lt;title&gt;New Web Project&lt;/title&gt;
+	&lt;meta name="description" content="" /&gt;
+	&lt;meta name="author" content="" /&gt;
+	&lt;meta name="viewport" 
+	     content="width=device-width; initial-scale=1.0" /&gt;
+	
+  &lt;/head&gt;
+
+  &lt;body&gt;
+		
+	&lt;h1&gt;New Web Project Page&lt;/h1&gt;
+     
+    &lt;p&gt;content here!&lt;/p&gt;
+		
+  &lt;/body&gt;
+  
+&lt;/html&gt;
+
+</pre>
+						</div>
+					</div>
+
+					<br class="clearFloat" />
+
+					<div class="content-section">
+						<span class="info-section full"> los cuales generan en el navegador algo del siguente estilo: </span>
+
+						<div class="src-section full page-web">
+							<div class="no-style ">
+								<h1>New Web Project Page</h1>
+
+								<p>
+									content here!
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="elements">
+					<header>
+						<h1 class="title-section img-html5">Elementos</h1>
+					</header>
+					<div class="content-section">
+						<div class="info-section full">
+							<h3>Elemestos de estructura global</h3>
+							<ul>
+
+								<li>
+									<code>
+										&lt;!DOCTYPE&gt;</code>
+								</li>
+								<li>
+									<code>
+										&lt;html&gt;</code>
+								</li>
+								<li>
+									<code>
+										&lt;head&gt;</code>
+								</li>
+								<li>
+									<code>
+										&lt;body&gt;</code>
+								</li>
+								<li>
+									<code>
+										&lt;meta&gt;</code>
+								</li>
+								<li>
+									<code>
+										&lt;title&gt;</code>
+								</li>
+								<li>
+									<code>
+										&lt;link&gt;</code>
+								</li>
+
+							</ul>
+
+							<h3>Elementos Redefinidos o modificados</h3>
+							<ul>
+								<li>
+									<code>
+										&lt;!DOCTYPE html&gt;
+									</code>
+								</li>
+								<li>
+									<code>
+										&lt;a&gt;
+									</code>
+								</li>
+								<li>
+									<code>
+										&lt;b&gt;
+									</code>
+								</li>
+								<li>
+									<code>
+										&lt;cite&gt;
+									</code>
+								</li>
+								<li>
+									<code>
+										&lt;hr&gt;
+									</code>
+								</li>
+								<li>
+									<code>
+										&lt;i&gt;
+									</code>
+								</li>
+								<li>
+									<code>
+										&lt;input&gt;
+									</code>
+								</li>
+								<li>
+									<code>
+										&lt;small&gt;
+									</code>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<br class="clearFloat" />
+
+					<div class="content-section">
+						<div class="info-section full">
+
+							<h3>Nuevos Elementos</h3>
+
+							<h5>Elemento DOCTYPE</h5>
+							<table class="my-table">
+								<thead>
+									<tr class="my-table-row">
+										<th class="text-right">Etiqueta</th>
+										<th>Descripcion</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;!DOCTYPE html&gt;
+										</code></td>
+										<td> Indica el tipo de documento creado, compatible con el correspondiente tag
+										para la versión HTML 4.01 pero mas simplificado</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<h5>Elemento canvas</h5>
+							<table class="my-table">
+								<thead>
+									<tr class="my-table-row">
+										<th class="text-right">Etiqueta</th>
+										<th>Descripcion</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;canvas&gt;
+										</code></td>
+										<td> Utilizado para dibujar gráficos a través de secuencias de comandos
+										(normalmente JavaScript) </td>
+									</tr>
+								</tbody>
+							</table>
+
+							<h5>Elementos Multimedia</h5>
+							<table class="my-table">
+								<thead>
+									<tr class="my-table-row">
+										<th class="text-right">Etiqueta</th>
+										<th>Descripcion</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;audio&gt;
+										</code></td>
+										<td> Para definir audio o sonido </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;video&gt;
+										</code></td>
+										<td> Para definir vídeo o película </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;source&gt;
+										</code></td>
+										<td> Para definir dentro de este tag varios recursos
+										de &lt;video&gt; y &lt;audio&gt; </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;embed&gt;
+										</code></td>
+										<td> Para proporcionar un contenedor para una aplicación externa o <abbr title="contenido interactivo">plug-in</abbr></td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;track&gt;
+										</code></td>
+										<td> Para definir <abbr title="texto">pistas</abbr> para
+										&lt;video&gt; y &lt;audio&gt; </td>
+									</tr>
+								</tbody>
+							</table>
+
+							<h5>Elementos para Formularios</h5>
+							<table class="my-table">
+								<thead>
+									<tr class="my-table-row">
+										<th class="text-right">Etiqueta</th>
+										<th>Descripcion</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;datalist&gt;
+										</code></td>
+										<td> Especifica una lista de opciones predefinidas para los controles input </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;keygen&gt;
+										</code></td>
+										<td> Define un campo generador de claves (para formularios) </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;output&gt;
+										</code></td>
+										<td> Define el resultado de un cálculo </td>
+									</tr>
+								</tbody>
+							</table>
+
+							<h5>Elementos semánticos</h5>
+							<table class="my-table">
+								<thead>
+									<tr class="my-table-row">
+										<th class="text-right">Etiqueta</th>
+										<th>Descripcion</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;article&gt;
+										</code></td>
+										<td> Define un artículo </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;aside&gt;
+										</code></td>
+										<td> Define el contenido considerado aparte del contenido de la página </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;bdi&gt;
+										</code></td>
+										<td> Aísla una parte de texto que puede ser formateada en una dirección
+										distinta de otro texto fuera de ella </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;command&gt;
+										</code></td>
+										<td> Define un botón de comando que el usuario puede invocar </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;details&gt;
+										</code></td>
+										<td> Define detalles adicionales que el usuario pueda ver u ocultar </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;dialog&gt;
+										</code></td>
+										<td> Define un cuadro de diálogo o ventana </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;summary&gt;
+										</code></td>
+										<td> Define un título visible para un elemento
+										<code>
+											&lt;details&gt;
+										</code></td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;figure&gt;
+										</code></td>
+										<td> Especifica contenido autónomo, como ilustraciones, diagramas, fotos,
+										listas de códigos, etc </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;figcaption&gt;
+										</code></td>
+										<td> Define un título para un elemento
+										<code>
+											&lt;figure&gt;
+										</code></td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;footer&gt;
+										</code></td>
+										<td> Define un pie de página de un documento o de la sección </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;header&gt;
+										</code></td>
+										<td> Define un encabezado de un documento o de la sección </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;mark&gt;
+										</code></td>
+										<td> Define texto marcado/resaltado </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;meter&gt;
+										</code></td>
+										<td> Define una medida escalar dentro de un rango
+										especificado (de forma total o parcial) </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;nav&gt;
+										</code></td>
+										<td> Define enlaces de navegación </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;progress&gt;
+										</code></td>
+										<td> Representa el progreso de una tarea </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;ruby&gt;
+										</code></td>
+										<td> Define una anotación de ruby (para la tipografía de Asia Oriental) </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;rt&gt;
+										</code></td>
+										<td> Define una explicación/pronunciación de los caracteres
+										(para la tipografía de Asia Oriental) </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;rp&gt;
+										</code></td>
+										<td> Define qué mostrar en los navegadores que no soportan anotaciones ruby </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;section&gt;
+										</code></td>
+										<td> Define una sección en un documento </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;time&gt;
+										</code></td>
+										<td> Define una fecha/hora </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;wbr&gt;
+										</code></td>
+										<td> Define una posible línea de ruptura </td>
+									</tr>
+									<tr class="my-table-row">
+										<td class="text-right">
+										<code>
+											&lt;output&gt;
+										</code></td>
+										<td> Representa el resultado de un cálculo </td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+					<br class="clearFloat" />
+					<div class="content-section">
+						<div class="info-section full" >
+							<h3>Elementos eliminados</h3>
+							<p>
+								<ul>
+									<li>
+										<code>
+											&lt;acronym&gt;
+										</code>
+									</li>
+									<li>
+										<code>
+											&lt;applet&gt;
+										</code>
+									</li>
+									<li>
+										<code>
+											&lt;basefont&gt;
+										</code>
+									</li>
+									<li>
+										<code>
+											&lt;big&gt;
+										</code>
+									</li>
+									<li>
+										<code>
+											&lt;center&gt;
+										</code>
+									</li>
+									<li>
+										<code>
+											&lt;dir&gt;
+										</code>
+									</li>
+									<li>
+										<code>
+											&lt;font&gt;
+										</code>
+									</li>
+									<li>
+										<code>
+											&lt;frame&gt;
+										</code>
+									</li>
+									<li>
+										<code>
+											&lt;frameset&gt;
+										</code>
+									</li>
+									<li>
+										<code>
+											&lt;NOFRAMES&gt;
+										</code>
+									</li>
+									<li>
+										<code>
+											&lt;strike&gt;
+										</code>
+									</li>
+									<li>
+										<code>
+											&lt;tt&gt;
+										</code>
+									</li>
+								</ul>
+							</p>
+						</div>
+
+					</div>
+				</section>
+
+				<section id="example">
+					<header>
+						<h1 class="title-section img-html5">Ejemplo</h1>
+					</header>
+					<div class="content-section">
+						<span class="info-section full"> Guardamos el siguiente código en un archivo *html: </span>
+
+						<div class="src-section full page-web">
+							<pre>
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en"&gt;
+
+  &lt;head&gt;
+  
+    &lt;meta charset="utf-8" /&gt;
+	&lt;meta http-equiv="X-UA-Compatible" 
+	     content="IE=edge,chrome=1" /&gt;
+    &lt;title&gt;New Web Project&lt;/title&gt;
+	&lt;meta name="description" content="" /&gt;
+	&lt;meta name="author" content="" /&gt;
+	&lt;meta name="viewport" 
+	     content="width=device-width; initial-scale=1.0" /&gt;
+	
+  &lt;/head&gt;
+
+  &lt;body&gt;
+	
+    &lt;header&gt;
+      &lt;h1&gt;Ejemplos : header principal&lt;/h1&gt;
+    &lt;/header&gt;
+    
+    &lt;nav&gt;
+      &lt;a href="#example2" title="opcion1"&gt;Opcion 2&lt;/a&gt; |
+      &lt;a href="#example2" title="opcion2"&gt;Opcion 2&lt;/a&gt; |
+      &lt;a href="#example2" title="opcion3"&gt;Opcion 2&lt;/a&gt;
+    &lt;/nav&gt;
+    
+    &lt;section&gt; 
+    	&lt;header&gt;
+    		&lt;h2&gt;Post: header de la seccion&lt;/h2&gt;
+    	&lt;/header&gt;
+      &lt;article&gt;
+  	  &lt;h2&gt;titulo del post&lt;/h2&gt;
+	    este es un post
+      &lt;/article&gt;
+      &lt;article&gt;
+	    &lt;h2&gt;titulo del post&lt;/h2&gt;
+	    este es un post
+      &lt;/article&gt;
+      &lt;article&gt;
+	    &lt;h2&gt;titulo del post&lt;/h2&gt;
+	    este es un post
+      &lt;/article&gt;   
+    &lt;/section&gt;
+    
+    &lt;section&gt;
+    	&lt;header&gt;
+    		&lt;h2&gt;Elementos: header de la seccion&lt;/h2&gt;
+    	&lt;/header&gt;
+    	
+    	&lt;p&gt;
+    		&lt;el siguiente sirve para habilitar descripciones, resumenes, etc
+    	&lt;/p&gt;
+
+        &lt;details&gt;
+          &lt;summary&gt;¿Qué es esto?&lt;/summary&gt;
+          este es un ejemplo de un details en nuestro manual
+        &lt;/details&gt;
+        
+        &lt;p&gt;
+        	Estos son meters
+        &lt;/p&gt;
+        meter a 30:&lt;br&gt;
+        &lt;meter min="0" max="100" low="40"  high="90" optimum="100" value="30"&gt;meter a 30&lt;/meter&gt;
+        meter a 60:&lt;br&gt;
+        &lt;meter min="0" max="100" low="40"  high="90" optimum="100" value="60"&gt;meter a 60&lt;/meter&gt;
+        meter a 60:&lt;br&gt;
+        &lt;meter min="0" max="100" low="40"  high="90" optimum="100" value="90"&gt;meter a 90&lt;/meter&gt;
+        
+        &lt;p&gt;
+        	Esta es una progresbar
+        &lt;/p&gt;
+        &lt;progress value="50" max="100"&gt;Ejemplo de progresbar&lt;/progress&gt;
+        
+        &lt;p&gt;
+        	Ahora tenemos enlaces descriptivos: un enlace con una descripción de su contenido
+        &lt;/p&gt;
+        
+        &lt;a rel="redirecciona a los ejemplos" href="#example2"&gt;Ir a los ejemplos&lt;/a&gt;
+        &lt;p&gt;
+        	Agregamos audio
+        &lt;/p&gt;
+        
+		&lt;audio controls&gt;
+		  &lt;source src="public/media/howl's_moving_castle.mp3" type="audio/mpeg"&gt;
+
+		    Tu navegador no soporta audio de forma nativa.
+		&lt;/audio&gt;
+		
+		&lt;p&gt; 
+			Agregamos video 
+		&lt;/p&gt;
+		
+		&lt;video width="320" height="240" controls&gt;
+			&lt;source src="public/media/howl's_moving_castle.mp4" type="video/mp4"&gt;
+			&lt;source src="public/media/howl's_moving_castle.ogg" type="video/ogg"&gt;
+			
+			  Tu navegador no soporta video de forma nativa.
+		&lt;/video&gt;
+		
+        &lt;p&gt;
+        	generamos graficos con SVG&lt;br&gt;
+			&lt;mark&gt;NOTA: Agregamos un efecto al pasar el mouse (esto es un mark, por cierto)&lt;/mark&gt;
+        &lt;/p&gt;
+
+        &lt;svg&gt;
+          &lt;circle id="myCircle" class="important" cx="50%" cy="50%" r="40" 
+              onmouseover="alert('no tengo vida social');"/&gt;
+        &lt;/svg&gt;
+        &lt;p&gt;
+        	por último, algunos de los inputs nuevos
+        &lt;/p&gt;
+
+
+        
+         	
+        text: &lt;input type="text" required /&gt;&lt;br&gt;
+        email: &lt;input type="email" value="username@domain.com" /&gt;&lt;br&gt;
+        datalist: &lt;input list="listaEjemplo" placeholder="Esto es un datlist..."/&gt;
+            &lt;datalist id="listaEjemplo"&gt;
+            &lt;option value="opcion1"/&gt;
+            &lt;option value="opcion2"/&gt;
+            &lt;option value="opcion3"/&gt;
+            &lt;option value="opcion4"/&gt;
+            &lt;option value="ya me canse"/&gt;
+         &lt;/datalist&gt;
+        speech: &lt;input type="text" x-webkit-speech /&gt;
+        date: &lt;input type="date" min="2010-08-14" max="2013-09-11" value="2013-02-14"/&gt;&lt;br&gt;
+        range: &lt;input type="range" min="0" max="10" value="1" /&gt;&lt;br&gt;
+        search: &lt;input type="search" results="10" placeholder="input de Busqueda" /&gt;&lt;br&gt;
+        tel:&lt;input type="tel"  placeholder="(000) 000-0000" pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$" /&gt;&lt;br&gt;
+        color:&lt;input type="color" placeholder="e. #FFF" /&gt;&lt;br&gt;
+        number: &lt;input type="number" step="1" min="-5" max="5" value="0" /&gt;
+        
+    &lt;/section&gt;
+
+    &lt;aside&gt;
+      Esta es una barra lateral en donde generalmente se 
+      ponen las cosas que nadie lee y que nade hace caso
+    &lt;/aside&gt;
+    
+    &lt;footer&gt;
+      El pie de página de nuestro documento
+    &lt;/footer&gt;
+		
+  &lt;/body&gt;
+  
+&lt;/html&gt;						</pre>
+						</div>
+					</div>
+					<div class="content-section">
+						<span class="info-section full"> Al acceder al archivo creado anteriormente mediante un navegador Web,
+							este ns mostrára el contenido siguiente: </span>
+
+						<div class="src-section full page-web">
+							<div id="example2" class="no-style">
+								<header>
+									<h1>Ejemplos : header principal</h1>
+								</header>
+
+								<nav>
+									<a href="#example2" title="opcion1">Opcion 2</a> | <a href="#example2" title="opcion2">Opcion 2</a> | <a href="#example2" title="opcion3">Opcion 2</a>
+								</nav>
+
+								<section>
+									<header>
+										<h2>Post: header de la seccion</h2>
+									</header>
+									<article>
+										<h2>titulo del post</h2>
+										este es un post
+									</article>
+									<article>
+										<h2>titulo del post</h2>
+										este es un post
+									</article>
+									<article>
+										<h2>titulo del post</h2>
+										este es un post
+									</article>
+								</section>
+
+								<section>
+									<header>
+										<h2>Elementos: header de la seccion</h2>
+									</header>
+
+									<p>
+										el siguiente sirve para habilitar descripciones, resumenes, etc
+										<br>
+										<details>
+											<summary>
+												¿Qué es esto?
+											</summary>
+											este es un ejemplo de un
+											<mark>
+												details
+											</mark>
+											en nuestro manual
+										</details>
+									</p>
+									<p>
+										Estos son meters
+									</p>
+
+									<table>
+										<tbody>
+											<tr>
+												<td> meter a 30: </td>
+												<td>
+												<meter min="0" max="100" low="40"  high="90" optimum="100" value="30">
+													meter a 30
+												</meter></td>
+											</tr>
+											<tr>
+												<td> meter a 60: </td>
+												<td>
+												<meter min="0" max="100" low="40"  high="90" optimum="100" value="60">
+
+													meter a 60
+												</meter></td>
+											</tr>
+											<tr>
+												<td> meter a 90: </td>
+												<td>
+												<meter min="0" max="100" low="40"  high="90" optimum="100" value="90">
+
+													meter a 90
+												</meter></td>
+											</tr>
+
+										</tbody>
+									</table>
+									<p>
+										Esta es una progresbar
+									</p>
+									<progress value="50" max="100">
+										Ejemplo de progresbar
+									</progress>
+
+									<p>
+										Ahora tenemos enlaces descriptivos: un enlace con una descripción de su contenido
+									</p>
+
+									<a rel="redirecciona a los ejemplos" href="#example2">Ir a los ejemplos</a>
+
+									<p>
+										Agregamos audio
+									</p>
+
+									<audio id=0 controls style="width: 100%;">
+										<source src="public/media/howl.mp3" type="audio/mpeg">
+
+										<p> Tu navegador no soporta audio de forma nativa.</p>
+									</audio>
+
+									<p>
+										Agregamos video
+									</p>
+
+									<video id=1 poster="public/img/html5-logo.png" controls style="width: 100%;">
+										<source src="public/media/howl.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+										<source src="public/media/howl.webm" type='video/webm' />
+										<source src="public/media/howl.mp4" type='video/mp4' />
+
+										<p>
+											tu navegador no soporta video de forma nativa
+										</p>
+									</video>
+
+									<p>
+										generamos graficos con SVG
+										<br>
+										<mark>
+											NOTA: Agregamos un efecto al pasar el mouse
+											(esto es un mark, por cierto)
+										</mark>
+									</p>
+
+									<svg style="width: 40%; height: 40%;">
+										<circle id="myCircle" class="important" cx="50%" cy="50%" r="40"
+										onmouseover="alert('no tengo vida social....');"/>
+									</svg>
+
+									<p>
+										por último, algunos de los inputs nuevos
+									</p>
+
+									<table>
+										<tbody>
+											<tr>
+												<td> text: </td>
+												<td>
+												<input type="text">
+												</td>
+
+											</tr>
+											<tr>
+												<td> email: </td>
+												<td>
+												<input type="email" value="username@domain.com" >
+												</td>
+											</tr>
+											<tr>
+												<td> datalist </td><td>
+												<input list="listaEjemplo" placeholder="Esto es un datlist">
+												<datalist id="listaEjemplo">
+													<option value="opcion1">
+													<option value="opcion2">
+													<option value="opcion3">
+													<option value="opcion4">
+													<option value="ya me canse">
+												</datalist></td>
+											</tr>
+											<tr>
+												<td> speech </td>
+												<td>
+												<input type="text" x-webkit-speech />
+												</td>
+											</tr>
+											<tr>
+												<td> date: </td>
+												<td>
+												<input type="date" min="2010-08-14" max="2013-09-11" value="2013-02-14">
+												</td>
+											</tr>
+											<tr>
+												<td> range:</td>
+												<td>
+												<input type="range" min="0" max="10" value="1" >
+												</td>
+											</tr>
+											<tr>
+												<td> search:</td>
+												<td>
+												<input type="search" results="10" placeholder="input de Busqueda" >
+												</td>
+											</tr>
+											<tr>
+												<td> tel: </td>
+												<td>
+												<input type="tel"  placeholder="(000) 000-0000" pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$" >
+												</td>
+											</tr>
+											<tr>
+												<td> color: </td>
+												<td>
+												<input type="color" placeholder="#FFF" >
+												</td>
+											</tr>
+											<tr>
+												<td> number:</td>
+												<td>
+												<input type="number" step="1" min="-5" max="5" value="0" >
+												</td>
+											<tr>
+										</tbody>
+									</table>
+
+								</section>
+
+								<aside>
+									Esta es una barra lateral en donde generalmente se
+									ponen las cosas que nadie lee y que nade hace caso
+								</aside>
+
+								<footer>
+									El pie de página de nuestro documento
+								</footer>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="exercises">
+					<header >
+						<h1 class="title-section img-html5">Ejemplo</h1>
+					</header>
+					<div class="content-section">
+						<div class="info-section full">
+							<p>
+								En esta ocasión generaremos un archivo
+								<code>
+									ejemplo.html
+								</code>
+								al cual irémos añadiendo elementos conforme vayamos avanzando. Adicionalmente crearemos una carpeta con nombre
+								<code>
+									ejemplos</code>
+								, dentro las carpetas <code>
+									css</code>
+								, <code>
+									js</code>
+								, <code>
+									img</code>
+								y <code>
+									media</code>
+								en donde agregaremos algunos archivos más adelante
+							</p>
+							<p>
+								Lo primero que haremos en el archivo
+								<code>
+									ejemplo.html
+								</code> es generar la estructura básica para un documento html5; para esto agregaremos
+								el siguiente código a nuestro archivo recien creado:
+							</p>
+
+							<blockquote>
+								El código final de nuestro ejemplo lo pueden encontrar en <a href="ejemplo.html">aquí</a>
+								<br>
+								Por razones prácticas, algunos archivos se encuentran en la carpeta <code>
+									public</code>, mientras que
+								en las descripciones que se desarrollaran se supone que estos archivos se encuentran en su respectiva
+								carpeta dentro de <code>
+									ejemplos</code>
+								. Lo que se recomenienda es copiar dichos archivos a su carpeta
+								correspondiente dentro de <code>
+									ejemplos</code>
+								(<strong>NOTA</strong>: habrá algunos archivos con el
+								mismo nombre pero con distinto código dentro de las carpetas, por eso se recomienda copiar los indicados
+								y no toda la estructura de directorios con su contenido)
+							</blockquote>
+						</div>
+						<div class="src-section full page-web">
+							<pre>
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang="es"&gt;
+
+  &lt;head&gt;
+  
+    &lt;meta charset="utf-8" /&gt;
+	&lt;meta http-equiv="X-UA-Compatible" 
+	        content="IE=edge,chrome=1" /&gt;
+    &lt;title&gt;Ejemplo HTML5 -  Aplicaciones Web&lt;/title&gt;
+	&lt;meta name="description" content="" /&gt;
+	&lt;meta name="author" content="" /&gt;
+	&lt;meta name="viewport" 
+	        content="width=device-width; initial-scale=1.0" /&gt;
+	
+  &lt;/head&gt;
+
+  &lt;body&gt;
+		
+	
+		
+  &lt;/body&gt;
+  
+&lt;/html&gt;
+	
+</pre>
+						</div>
+					</div>
+				</section>
+				<section id="apis">
+					<header >
+						<h1 class="title-section img-html5">Las Nuevas APIs</h1>
+					</header>
+					<div class="content-section">
+						<div class="info-section full">
+							<ul>
+								<li>
+									Canvas
+								</li>
+								<li>
+									Drag &amp; Drop
+								</li>
+								<li>
+									Geolocation
+								</li>
+								<li>
+									Storage
+									<ul>
+										<li>
+											Web Storage
+										</li>
+										<li>
+											Indexed DataBase
+										</li>
+									</ul>
+								</li>
+								<li>
+									File
+								</li>
+								<li>
+									Communication
+									<ul>
+										<li>
+											XMLHHTR	EQUEST
+										</li>
+										<li>
+											Cross Document Messaging
+										</li>
+										<li>
+											Web Sockets
+										</li>
+									</ul>
+								</li>
+								<li>
+									WebWorkers
+								</li>
+								<li>
+									History
+								</li>
+								<li>
+									Offline
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+			</div>
+			<footer>
+
+				<h4>&copy; Juan José Ramírez González</h4>
+				<span> Aplicaciones WEb </span>
+			</footer>
+		</div>
+	</body>
+</html>

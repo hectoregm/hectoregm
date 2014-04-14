@@ -1,0 +1,174 @@
+#main-header {
+	width: 94%;
+	margin: 0 auto;
+}
+#header-img {
+	position: relative;
+	width: 50%;
+	margin-left: 24%;
+	height: auto;
+	padding: 2em;
+}
+
+section {
+	padding: 1em 2em;
+	margin: 1em auto;
+}
+.title-section {
+	/*background: #0092bf;*/
+	padding: 1em;
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	margin: 0;
+}
+.content-section {
+	width: 100%;
+	background: #FFF;
+	display: inline-block;
+}
+.img-section, .src-section {
+	width: 40%;
+	height: auto;
+	background: #efefef;
+}
+.src-section {
+	padding: .5em;
+}
+
+.info-section {
+	font-size: 1.5em;
+	width: 48%;
+	padding: 1em 2em;
+	text-align: justify;
+}
+.clearFloat {
+	clear: both;
+	display: block;
+	margin: .2em auto;
+}
+blockquote {
+	border-left: solid 5px #333;
+	padding-left: .3em;
+	font-size: .8em;
+}
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+.middle {
+}
+
+.src-section.middle {
+	width: 50%;
+}
+.full {
+	width: auto !important;
+}
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+.text-bold{
+	font-weight: bold;
+}
+
+.no-style, .no-style footer {
+	width: 99%;
+	color: #000;
+	background: #FFF;
+	text-transform: none;
+	font-size: 1em;
+	margin: auto;
+	padding: 0;
+	border: 0;
+}
+.no-style mark {
+	color: #000;
+	background: #FF0;
+}
+.no-style h1, .no-style h2 {
+	color: #000;
+	text-transform: none;
+	border: 0;
+}
+mark {
+	padding: .1em 0 .1em .4em;
+	background: #0092BF;
+	color: #FFF;
+}
+abbr {
+	cursor: help;
+	font-weight: bold;
+}
+code, pre {
+	/*padding: 0 3px 2px;*/
+	font-family: Consolas, "Courier New", monospace;
+	background: #f7f7f9;
+	border: 1px solid #e1e1e8;
+	/*font-weight: bold;*/
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+code {
+	padding: 0em 0.2em;
+	color: #F00;
+	font-size: .8em;
+	white-space: nowrap;
+}
+
+pre {
+	display: block;
+	margin: 2%;
+	padding: 1em;
+	font-size: .8em;
+	line-height: 1.5em;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	color: #333;
+	
+	-moz-box-shadow: inset 0 0 5px #888;
+	-webkit-box-shadow: inset 0 0 5px #888;
+	box-shadow: inset 0 0 5px #888;
+}
+
+.my-table {
+
+	font-size: .8em;
+	margin-bottom: 3em;
+	width: 100%;
+}
+.my-table td, .my-table tr, .my-table th {
+	border: 1px solid #d9d9d9;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+}
+thead {
+	background: #d9d9d9;
+}
+.my-table thead tr th, .my-table tbody tr td {
+	padding: 0.2em 1.5em;
+}
+.my-table thead, .my-table tbody tr {
+	border-bottom: solid 3px #eee;
+}
+
+#semanticCanvas {
+		width: 370px;
+		border: 1px solid #c3c3c3;
+		height: 380px;
+	}
