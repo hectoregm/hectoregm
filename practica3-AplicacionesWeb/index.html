@@ -7,68 +7,69 @@
     <meta name="viewport" content="width=device-width  initial-scale=1.0" />
     <link rel="stylesheet" href="public/css/main.css" />
     <link rel="stylesheet" href="public/css/menu.css" />
-    <link rel="stylesheet" href="public/css/app.css" />
+
     <link rel="stylesheet" href="public/css/backgrounds.css" />
+    <link rel="stylesheet" href="public/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="public/css/app.css" />
 
     <link rel="shortcut icon"    href="public/img/html5-ico.png" />
     <link rel="apple-touch-icon" href="public/img/html5-ico.png" />
 
+    <script src="public/js/jquery-1.11.0.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/change_page.js"></script>
 
   </head>
 
   <body>
-    <nav id="main-navbar">
-      <ul class="main-menu">
-        <li>
-          <a href="javascript:change_page('index')">Inicio</a>
-        </li>
-        <li>
-          <a href="#">Multimedia</a>
-          <ul class="main-submenu">
-            <li>
-              <a href="javascript:change_page('formulario')">formulario</a>
-            </li>
-            <li>
-              <a href="javascript:change_page('multimedia')">multimedia</a>
-            </li>
-            <li>
-              <a href="javascript:change_page('multimediaAdv')">mult. avanzado</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Nuevas APIS</a>
-          <ul class="main-submenu">
-
-            <li>
-              <a href="javascript:change_page('canvas')">canvas</a>
-            </li>
-            <li class="btn">
-              <a href="javascript:change_page('geolocation')">geolocalizacion</a>
-            </li>
-            <li class="btn">
-              <a href="javascript:change_page('storage-db')">almacenamiento</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Animaciones</a>
-          <ul class="main-submenu">
-            <li class="btn">
-              <a href="javascript:change_page('dragdrop-ajax')">Drag &amp; Drop</a>
-            </li>
-            <li class="btn">
-              <a href="javascript:change_page('css')">Anim</a>
-            </li>
-            <li class="btn">
-              <a href="javascript:change_page('cssAdv')">Anim Adv</a>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">HTML5</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="javascript:change_page('index')">Inicio</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Multimedia <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="javascript:change_page('formulario')">Formulario</a></li>
+                <li><a href="javascript:change_page('multimedia')">Multimedia</a></li>
+                <li><a href="javascript:change_page('multimediaAdv')">Mult. Avanzado</a></li>
+              </ul>
             </li>
 
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown">Nuevas APIS <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="javascript:change_page('canvas')">Canvas</a></li>
+                <li><a href="javascript:change_page('geolocation')">Geolocalizacion</a></li>
+                <li><a href="javascript:change_page('storage-db')">Almacenamiento</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown">Animaciones <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="javascript:change_page('dragdrop-ajax')">Drag &amp; Drop</a></li>
+                <li><a href="javascript:change_page('css')">Anim</a></li>
+                <li><a href="javascript:change_page('cssAdv')">Anim Adv</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </nav>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 
     <section id="index" class="main-container active">
       <!-- El encabezado principal de nuestra página -->
@@ -142,7 +143,61 @@
 
     <section id="formulario" class="main-container">
       <figure class="example pull-right">
+        <div class="container">
+          <h1>Registro de datos</h1>
 
+          <div class="row">
+            <div class="hidden alert alert-danger fade in">
+              <h4>Oh no! Tienes un error!</h4>
+              <ul class="alert_messages">
+              </ul>
+            </div>
+
+            <div class="hidden alert alert-success fade in">
+              <h4>Registro Exitoso</h4>
+            </div>
+
+            <div class="col-md-4">
+              <form role="form">
+                <div class="form-group">
+                  <label for="nickname">Nickname</label>
+                  <input type="text" class="form-control" id="nickname" placeholder="Nickname">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="delegacion">Delegacion</label>
+                  <select id="delegacion" class="form-control">
+                    <option>Álvaro Obregón</option>
+                    <option>Azcapotzalco</option>
+                    <option>Benito Juárez</option>
+                    <option>Coyoacán</option>
+                    <option>Cuajimalpa de Morelos</option>
+                    <option>Cuauhtémoc</option>
+                    <option>Gustavo A. Madero</option>
+                    <option>Iztacalco</option>
+                    <option>Iztapalapa</option>
+                    <option>Magdalena Contreras</option>
+                    <option>Miguel Hidalgo</option>
+                    <option>Milpa Alta</option>
+                    <option>Tláhuac</option>
+                    <option>Tlalpan</option>
+                    <option>Venustiano Carranza</option>
+                    <option>Xochimilco</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="nickname">Codigo Postal</label>
+                  <input type="number" class="form-control"
+                         id="codigo_postal" placeholder="Codigo Postal">
+                </div>
+                <button class="submit btn btn-lg btn-primary btn-block" type="submit">Aceptar</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </figure>
 
       <article class="info">
@@ -272,7 +327,7 @@
         <nav class="sections group">
           <div class="prev">
             <a href="javascript:change_page('multimediaAdv')">&lt;&lt;
-            Multimedia Adv</a>
+              Multimedia Adv</a>
           </div>
           <div class="next">
             <a href="javascript:change_page('geolocation')">Geolocalizacion &gt;&gt;</a>
@@ -324,7 +379,7 @@
           </div>
           <div class="next">
             <a href="javascript:change_page('dragdrop-ajax')">Drag
-            &amp; Drop &gt;&gt;</a>
+              &amp; Drop &gt;&gt;</a>
           </div>
         </nav>
         <header class="header">
@@ -375,7 +430,7 @@
           </div>
           <div class="next">
             <a href="javascript:change_page('cssAdv')">Animaciones Adv
-            &gt;&gt;</a>
+              &gt;&gt;</a>
           </div>
         </nav>
         <header class="header">
