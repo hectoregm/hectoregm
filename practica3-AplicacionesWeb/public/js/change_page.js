@@ -5,17 +5,17 @@
 
 var currentPage;
 function init(){
-	currentPage = document.getElementById('index');
+  currentPage = document.getElementById('index');
 }
 
 function change_page(id) {
-	var newPage = document.getElementById(id);
+  var newPage = document.getElementById(id);
 
-	if (newPage != currentPage) {
-		currentPage.className = "main-container";
-		newPage.className = "main-container active";
-		currentPage = newPage;
-	}
+  if (newPage != currentPage) {
+    currentPage.className = "section-container";
+    newPage.className = "section-container active";
+    currentPage = newPage;
+  }
 
 }
 

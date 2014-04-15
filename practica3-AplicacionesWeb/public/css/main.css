@@ -1,118 +1,86 @@
 /*@import url(http://fonts.googleapis.com/css?family=Andika);*/
 html, body {
-	font-family: "Verdana", Times, sans-serif;
-	/*font-size: smaller;*/
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	/*text-transform:capitalize;*/
-	overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
 }
 
-header, section, footer, aside, nav, article, figure {
-	display: block;
-}
-h1, h2, h3, h4, h5, h6, #main-navbar {
-	text-transform: uppercase;
-}
-
-a {
-	text-decoration: none !important;
-	color: #fff;
+.section-container {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
 }
 
-.main-container {
-	font-size: large;
-	width: 100%;
-	height: 89%;
-	display: none;
-	visibility: hidden;
-	opacity: 0;
-	
-}
 .no-visible {
-	display: none;
-	visibility: hidden;
+    display: none;
+    visibility: hidden;
 }
-code{
-	text-transform:none;
-}
+
 .info {
-	width: 40%;
-	height: 97%;
-	padding: 1% 2% 2%;
-	overflow-y:scroll;
-	overflow-x: hidden;
-	
+    top:0;
+    bottom:0;
+    left: 0;
+    position: absolute;
+    width: 40%;
+    padding: 1% 2% 2%;
 }
+
 .example {
-	width: 53%;
-	height: 97%;
-	margin: 0;
-	padding: 2% 0 0;
-	overflow: auto;
-}
-.pull-right {
-	float: right;
-}
-.pull-left {
-	float: left;
-}
-.clearFloat {
-	clear: both;
-	display: block;
-	margin: .2em auto;
-	visibility: hidden;
+    width: 53%;
+    height: 100%;
+    padding: 2% 0 0;
 }
 
 .sec-table tbody td {
-	text-decoration: none !important;
-	padding: 2em;
-	background: #207CCA;
-	color: #fff !important;
-	text-align: center;
+    text-decoration: none !important;
+    padding: 2em;
+    background: #207CCA;
+    color: #fff !important;
+    text-align: center;
 }
 
 .sec-table tbody td:hover {
-	
-	background: #1E5799;
-	}
 
- a.table-link:hover, {
-	text-decoration: none !important;
-	/*padding: 2em;*/
-	/*background: #207CCA;*/
-	color: #000;
-	text-align: center;
+    background: #1E5799;
+}
+
+a.table-link:hover, {
+    text-decoration: none !important;
+    color: #000;
+    text-align: center;
 }
 
 .header {
-	color: #fff;
+    color: #fff;
 }
+
 .active {
-	display: block !important;
-	visibility: visible !important;
-	opacity: 1;
-	-webkit-animation: myAnimation 1s 1; /* Chrome, Safari 5+ */
-	-moz-animation: myAnimation 1s 1; /* Firefox 5-15 */
-	-o-animation: myAnimation 1s 1; /* Opera 12.00 */
-	animation: myAnimation 1s 1; /* Chrome, Firefox 16+, IE 10+, Opera 12.10+ */
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1;
+    -webkit-animation: myAnimation 1s 1; /* Chrome, Safari 5+ */
+    -moz-animation: myAnimation 1s 1; /* Firefox 5-15 */
+    -o-animation: myAnimation 1s 1; /* Opera 12.00 */
+    animation: myAnimation 1s 1; /* Chrome, Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
 @-webkit-keyframes myAnimation {
-0%   { opacity: 0.0; -webkit-transform: translate(20%, 0);}
-100% { opacity: 1.0; -webkit-transform: translate(0, 0); }
+    0%   { opacity: 0.0; -webkit-transform: translate(20%, 0);}
+    100% { opacity: 1.0; -webkit-transform: translate(0, 0); }
 }
 @-moz-keyframes myAnimation {
-0%   { opacity: 0.0; -moz-transform: translate(20%, 0);}
-100% { opacity: 1.0; -moz-transform: translate(0, 0);}
+    0%   { opacity: 0.0; -moz-transform: translate(20%, 0);}
+    100% { opacity: 1.0; -moz-transform: translate(0, 0);}
 }
 @-o-keyframes myAnimation {
-0%   { opacity: 0.0; -o-transform: translate(20%, 0);}
-100% { opacity: 1.0; -o-transform: translate(0, 0);}
+    0%   { opacity: 0.0; -o-transform: translate(20%, 0);}
+    100% { opacity: 1.0; -o-transform: translate(0, 0);}
 }
 @keyframes myAnimation {
-0%   { opacity: 0.0; transform: translate(20%, 0);}
-100% { opacity: 1.0; transform: translate(0, 0);}
+    0%   { opacity: 0.0; transform: translate(20%, 0);}
+    100% { opacity: 1.0; transform: translate(0, 0);}
 }

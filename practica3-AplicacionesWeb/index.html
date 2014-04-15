@@ -6,7 +6,6 @@
     <title>Ejemplo HTML5 - Aplicaciones Web</title>
     <meta name="viewport" content="width=device-width  initial-scale=1.0" />
     <link rel="stylesheet" href="public/css/main.css" />
-    <link rel="stylesheet" href="public/css/menu.css" />
 
     <link rel="stylesheet" href="public/css/backgrounds.css" />
     <link rel="stylesheet" href="public/css/bootstrap.min.css" />
@@ -18,6 +17,7 @@
 
     <script src="public/js/jquery-1.11.0.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/formularios.js"></script>
     <script src="public/js/change_page.js"></script>
 
   </head>
@@ -33,7 +33,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">HTML5</a>
+          <a class="navbar-brand" href="javascript:change_page('index')">HTML5</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -49,7 +49,7 @@
 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle"
-              data-toggle="dropdown">Nuevas APIS <b class="caret"></b></a>
+                 data-toggle="dropdown">Nuevas APIS <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="javascript:change_page('canvas')">Canvas</a></li>
                 <li><a href="javascript:change_page('geolocation')">Geolocalizacion</a></li>
@@ -59,7 +59,7 @@
 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle"
-              data-toggle="dropdown">Animaciones <b class="caret"></b></a>
+                 data-toggle="dropdown">Animaciones <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="javascript:change_page('dragdrop-ajax')">Drag &amp; Drop</a></li>
                 <li><a href="javascript:change_page('css')">Anim</a></li>
@@ -71,7 +71,7 @@
       </div>
     </div>
 
-    <section id="index" class="main-container active">
+    <section id="index" class="section-container active">
       <!-- El encabezado principal de nuestra página -->
       <figure class="example pull-right">
 
@@ -125,7 +125,7 @@
 
 
     <!-- Sección de ejmplo -->
-    <section id="semantica" class="main-container">
+    <section id="semantica" class="section-container">
       <figure class="example pull-right">
 
       </figure>
@@ -141,31 +141,37 @@
       </article>
     </section>
 
-    <section id="formulario" class="main-container">
+    <section id="formulario" class="section-container">
       <figure class="example pull-right">
-        <div class="container">
+        <div class="containesr">
           <h1>Registro de datos</h1>
 
           <div class="row">
-            <div class="hidden alert alert-danger fade in">
-              <h4>Oh no! Tienes un error!</h4>
-              <ul class="alert_messages">
-              </ul>
-            </div>
-
-            <div class="hidden alert alert-success fade in">
-              <h4>Registro Exitoso</h4>
-            </div>
-
             <div class="col-md-4">
-              <form role="form">
+
+              <div class="hidden alert alert-danger fade in">
+                <h4>Oh no! Tienes un error!</h4>
+                <ul class="alert_messages">
+                </ul>
+              </div>
+
+              <div class="hidden alert alert-success fade in">
+                <h4>Registro Exitoso</h4>
+              </div>
+
+              <form id="demo-form" role="form">
                 <div class="form-group">
-                  <label for="nickname">Nickname</label>
-                  <input type="text" class="form-control" id="nickname" placeholder="Nickname">
+                  <label for="name">Nombre</label>
+                  <input required type="text" pattern="([a-zA-Z ]{4,})" class="form-control" id="name" placeholder="Nombre">
                 </div>
                 <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email">
+                  <label for="email">Correo</label>
+                  <input required type="email" class="form-control" id="email" placeholder="Correo">
+                </div>
+                <div class="form-group">
+                  <label for="birthday">Dia de Nacimiento</label>
+                  <input required type="date" name="birthday" id="birthday"
+                         value="1982-02-27">
                 </div>
                 <div class="form-group">
                   <label for="delegacion">Delegacion</label>
@@ -189,9 +195,22 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="nickname">Codigo Postal</label>
-                  <input type="number" class="form-control"
+                  <label for="javalevel">Nivel de Conocimiento Java</label>
+                  <input required type="range" min="0" max="100"
+                         class="form-control"
+                         id="javalevel" value="0">
+                </div>
+                <div class="form-group">
+                  <label for="codigo_postal">Codigo Postal</label>
+                  <input required type="text"
+                         pattern="(\d{5})" class="form-control"
                          id="codigo_postal" placeholder="Codigo Postal">
+                </div>
+                <div class="form-group">
+                  <label for="color">Color Favorito</label>
+                  <input required type="color"
+                         class="form-control"
+                         name="color" id="color">
                 </div>
                 <button class="submit btn btn-lg btn-primary btn-block" type="submit">Aceptar</button>
               </form>
@@ -222,7 +241,7 @@
 
     </section>
 
-    <section id="multimedia" class="main-container">
+    <section id="multimedia" class="section-container">
 
       <figure class="example pull-right">
 
@@ -291,7 +310,7 @@
       </article>
 
     </section>
-    <section id="multimediaAdv" class="main-container">
+    <section id="multimediaAdv" class="section-container">
       <figure class="example pull-right">
 
       </figure>
@@ -314,7 +333,7 @@
       </article>
     </section>
 
-    <section id="canvas" class="main-container">
+    <section id="canvas" class="section-container">
       <figure class="example pull-right">
         <canvas width="400" height="400">
           <p>
@@ -343,7 +362,7 @@
       </article>
     </section>
 
-    <section id="geolocation" class="main-container">
+    <section id="geolocation" class="section-container">
       <figure class="example pull-right">
 
       </figure>
@@ -367,7 +386,7 @@
       </article>
     </section>
 
-    <section id="storage-db" class="main-container">
+    <section id="storage-db" class="section-container">
       <figure class="example pull-right">
 
       </figure>
@@ -395,7 +414,7 @@
       </article>
     </section>
 
-    <section id="dragdrop-ajax" class="main-container">
+    <section id="dragdrop-ajax" class="section-container">
       <figure class="example pull-right">
 
       </figure>
@@ -418,7 +437,7 @@
       </article>
     </section>
 
-    <section id="css" class="main-container">
+    <section id="css" class="section-container">
       <figure class="example pull-right">
 
       </figure>
@@ -444,7 +463,7 @@
 
 
 
-    <section id="cssAdv" class="main-container">
+    <section id="cssAdv" class="section-container">
       <figure class="example pull-right">
         <img class="nube-1" src="public/img/nube.png" alt="">
         <img class="nube-2" src="public/img/nube.png" alt="">
@@ -473,8 +492,6 @@
         </p>
       </article>
     </section>
-
-
 
 
 
