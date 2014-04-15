@@ -30,9 +30,8 @@ html, body {
 }
 
 .example {
-    width: 53%;
-    height: 100%;
-    padding: 2% 0 0;
+    width: 58%;
+    padding: 1% 0 0;
 }
 
 .sec-table tbody td {
@@ -71,6 +70,42 @@ a.table-link:hover, {
 #video-demo video {
     width: auto;
     height: auto;
+}
+
+#audio-player, #playlist {
+    background: #666;
+    width: 400px;
+    padding: 20px;
+}
+
+#audio-player {
+    box-sizing: content-box;
+}
+
+#playlist{
+    list-style: none;
+}
+
+#playlist .active-track a{
+    color: #5DB0E6;
+    text-decoration: none;
+}
+
+#playlist .no-visible {
+    display: none;
+    visibility: hidden;
+}
+
+#playlist li a{
+    color:#eeeedd;
+    background:#333;
+    padding:5px;
+    display:inline-block;
+    text-decoration: underline;
+}
+
+#playlist li a:hover {
+    text-decoration:none;
 }
 
 @-webkit-keyframes myAnimation {

@@ -17,8 +17,10 @@
 
     <script src="public/js/jquery-1.11.0.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
-    <script src="public/js/formularios.js"></script>
     <script src="public/js/change_page.js"></script>
+
+    <script src="public/js/formularios.js"></script>
+    <script src="public/js/multimedia.js"></script>
 
   </head>
 
@@ -143,7 +145,7 @@
 
     <section id="formulario" class="section-container">
       <figure class="example pull-right">
-        <div class="containesr">
+        <div>
           <h1>Registro de datos</h1>
 
           <div class="row">
@@ -312,7 +314,22 @@
     </section>
     <section id="multimediaAdv" class="section-container">
       <figure class="example pull-right">
+        <header class="">
+          Audio Player Demo
+        </header>
+        <div>
+          <audio id="audio-player" controls >
+            <source src="http://www.archive.org/download/bolero_69/Bolero.mp3" type="audio/mpeg" />
 
+            <p> Tu navegador no soporta audio de forma nativa.</p>
+          </audio>
+
+          <ul id="playlist">
+            <li class="active-track"><span class="label label-success">Current</span>
+              <a href="http://www.archive.org/download/bolero_69/Bolero.mp3">Ravel Bolero</a></li>
+            <li><span class="label label-success no-visible">Current</span><a href="http://www.archive.org/download/MoonlightSonata_755/Beethoven-MoonlightSonata.mp3">Moonlight Sonata - Beethoven</a></li>
+          </ul>
+        </div>
       </figure>
 
       <article class="info">
