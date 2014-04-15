@@ -1,7 +1,8 @@
 $(function() {
   $('#demo-form').submit(function(event) {
     event.preventDefault();
-    validateForm();
+    console.log("Foo");
+    //validateForm();
   });
   function validateForm() {
     var nickname, email, delegacion, cp, alert_message;
