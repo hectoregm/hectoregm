@@ -21,6 +21,8 @@
 
     <script src="public/js/formularios.js"></script>
     <script src="public/js/multimedia.js"></script>
+    <script src="public/js/complex.js"></script>
+    <script src="public/js/canvas_fractal.js"></script>
 
   </head>
 
@@ -352,7 +354,10 @@
 
     <section id="canvas" class="section-container">
       <figure class="example pull-right">
-        <canvas width="400" height="400">
+        <div class="controls">
+          <button id="draw-fractal" type="button" class="btn btn-primary btn-lg">Dibujar Manenbrot</button>
+        </div>
+        <canvas id="fractal" width="600" height="400">
           <p>
             Tu navegador no soporta canvas de HTML5
           </p>
