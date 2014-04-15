@@ -68,6 +68,11 @@ a.table-link:hover, {
     animation: myAnimation 1s 1; /* Chrome, Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
+#video-demo video {
+    width: auto;
+    height: auto;
+}
+
 @-webkit-keyframes myAnimation {
     0%   { opacity: 0.0; -webkit-transform: translate(20%, 0);}
     100% { opacity: 1.0; -webkit-transform: translate(0, 0); }

@@ -238,16 +238,23 @@
 
       <figure class="example pull-right">
 
-        <div style="height: 30%;">
+        <header class="">
+          Audio Player Demo
+        </header>
+        <div id="audio-demo">
           <audio controls >
-            <source src="public/media/howl.mp3" type="audio/mpeg" />
+            <source src="public/media/audio.mp3" type="audio/mpeg" />
+            <source src="public/media/audio.ogg" type="audio/ogg" />
 
             <p> Tu navegador no soporta audio de forma nativa.</p>
           </audio>
         </div>
 
-        <div style="height: 30%;">
-          <video controls width="420" height="200">
+        <header class="">
+          Video Player Demo
+        </header>
+        <div id="video-demo">
+          <video controls preload="auto" >
             <source src="public/media/howl.ogv" type='video/ogg; codecs="theora,vorbis"'/>
             <source src="public/media/howl.webm" type='video/webm'/>
             <source src="public/media/howl.mp4" type='video/mp4' />
@@ -274,7 +281,7 @@
           <h2>Multimedia</h2>
         </header>
         <p>
-          En la nueva especificación se tiene soporte para audio y video y en est sección mostraremos un uso básico de estos elementos
+          En la nueva especificación se tiene soporte para audio y video y en esta sección mostraremos un uso básico de estos elementos
         </p>
         <p>
           Para agregar audio hacemos uso del tag <code>
