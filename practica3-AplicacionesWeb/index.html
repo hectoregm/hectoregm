@@ -25,6 +25,7 @@
     <script src="public/js/complex.js"></script>
     <script src="public/js/canvas_fractal.js"></script>
     <script src="public/js/geo.js"></script>
+    <script src="public/js/storage.js"></script>
 
 
   </head>
@@ -416,7 +417,13 @@
 
     <section id="storage-db" class="section-container">
       <figure class="example pull-right">
-
+        <h1>Todo List</h1>
+        <ul id="todoItems">
+        </ul>
+        <input type="text" id="todo" name="todo" placeholder="What I need to do?"
+               style="width: 200px;">
+        <input type="submit" value="Add Todo Item"
+               onclick="addTodo(); return false;">
       </figure>
 
       <article class="info">
