@@ -18,11 +18,14 @@
     <script src="public/js/jquery-1.11.0.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/change_page.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 
     <script src="public/js/formularios.js"></script>
     <script src="public/js/multimedia.js"></script>
     <script src="public/js/complex.js"></script>
     <script src="public/js/canvas_fractal.js"></script>
+    <script src="public/js/geo.js"></script>
+
 
   </head>
 
@@ -385,8 +388,10 @@
     </section>
 
     <section id="geolocation" class="section-container">
-      <figure class="example pull-right">
+      <figure class="example pull-right" style="height: 600px;">
+        <div id="google_canvas">
 
+        </div>
       </figure>
 
       <article class="info">
@@ -398,6 +403,7 @@
             <a href="javascript:change_page('storage-db')">Almacenamiento &gt;&gt;</a>
           </div>
         </nav>
+
         <header class="header">
           <h2>Geolocalización</h2>
         </header>
