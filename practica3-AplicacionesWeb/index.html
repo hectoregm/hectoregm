@@ -26,6 +26,7 @@
     <script src="public/js/canvas_fractal.js"></script>
     <script src="public/js/geo.js"></script>
     <script src="public/js/storage.js"></script>
+    <script src="public/js/dragdrop.js"></script>
 
 
   </head>
@@ -451,7 +452,13 @@
 
     <section id="dragdrop-ajax" class="section-container">
       <figure class="example pull-right">
-
+        <h1>Drag the blue box into the red box and back</h1>
+        <div class="sectionB">
+        </div>
+        <div class="sectionA">
+          <div class="drag" id="box" draggable="true">
+          </div>
+        </div>
       </figure>
 
       <article class="info">
@@ -474,13 +481,16 @@
 
     <section id="css" class="section-container">
       <figure class="example pull-right">
-
+        <div class="sectionC">
+          <div class="drag" id="anibox" draggable="true">
+          </div>
+        </div>
       </figure>
 
       <article class="info">
         <nav class="sections group">
           <div class="prev">
-            <a href="javascript:change_page('dragdrog-ajax')">Drag &amp; Drop &gt;&gt;</a>
+            <a href="javascript:change_page('dragdrop-ajax')">Drag &amp; Drop &gt;&gt;</a>
           </div>
           <div class="next">
             <a href="javascript:change_page('cssAdv')">Animaciones Adv
