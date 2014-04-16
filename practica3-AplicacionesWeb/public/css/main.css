@@ -150,14 +150,82 @@ a.table-link:hover, {
     -ms-transform: rotate(45deg) scale(2) translateY(150px);
 }
 
-@-webkit-keyframes myAnimation {
+.animation {
+    background-color: white;
+}
+
+.cloud {
+    position: absolute;
+    opacity: 0.2;
+    float:left;
+}
+
+.nube-1 {
+    -webkit-animation: nube-1 80s infinite;
+    animation: nube-1 80s infinite;
+}
+
+.nube-2 {
+    top: 65px;
+    -webkit-animation: nube-2 120s infinite;
+    animation: nube-2 120s infinite;
+}
+
+.nube-3 {
+    top: 35px;
+    -webkit-animation: nube-3 100s infinite;
+    animation: nube-3 100s infinite;
+}
+
+.nube-4 {
+    -webkit-animation: nube-4 200s infinite;
+    animation: nube-4 200s infinite;
+}
+
+@-webkit-keyframes nube-1 {
     0%   { opacity: 0.0; -webkit-transform: translate(20%, 0);}
-    100% { opacity: 1.0; -webkit-transform: translate(0, 0); }
+    100% { opacity: 1.0; -webkit-transform: translate(-100%, 0); }
 }
-@-moz-keyframes myAnimation {
-    0%   { opacity: 0.0; -moz-transform: translate(20%, 0);}
-    100% { opacity: 1.0; -moz-transform: translate(0, 0);}
+
+@-moz-keyframes nube-1 {
+    0%   { opacity: 0.0; transform: translate(20%, 0);}
+    100% { opacity: 1.0; transform: translate(-100%, 0); }
 }
+
+@-webkit-keyframes nube-2 {
+    0%   { opacity: 0.3; -webkit-transform: translate(90%, 0);}
+    50%   { opacity: 0.7; -webkit-transform: translate(10%, 0);}
+    100% { opacity: 1.0; -webkit-transform: translate(-100%, 0); }
+}
+
+@-moz-keyframes nube-2 {
+    0%   { opacity: 0.3; transform: translate(90%, 0);}
+    50%   { opacity: 0.7; transform: translate(10%, 0);}
+    100% { opacity: 1.0; transform: translate(-100%, 0); }
+}
+
+@-webkit-keyframes nube-3 {
+    0%   { opacity: 0.5; -webkit-transform: translate(40%, 0);}
+    100% { opacity: 1.0; -webkit-transform: translate(-100%, 0); }
+}
+
+@-moz-keyframes nube-3 {
+    0%   { opacity: 0.5; transform: translate(40%, 0);}
+    100% { opacity: 1.0; transform: translate(-100%, 0); }
+}
+
+@-webkit-keyframes nube-4 {
+    0%   { opacity: 0.3; -webkit-transform: translate(10%, 0);}
+    50%  { opacity: 0.7; -webkit-transform: translate(-60%, 0);}
+    100% { opacity: 1.0; -webkit-transform: translate(-100%, 0); }
+}
+
+@-moz-keyframes nube-4 {
+    0%   { opacity: 0.3; transform: translate(10%, 0);}
+    50%  { opacity: 0.7; transform: translate(-60%, 0);}
+    100% { opacity: 1.0; transform: translate(-100%, 0); }
+}
+
 @-o-keyframes myAnimation {
     0%   { opacity: 0.0; -o-transform: translate(20%, 0);}
     100% { opacity: 1.0; -o-transform: translate(0, 0);}
