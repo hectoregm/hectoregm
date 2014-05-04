@@ -111,4 +111,59 @@ function login_check($mysqli) {
     }
 }
 
+function is_admin($mysqli) {
+    $user_id = $_SESSION['user_id'];
+
+    if (login_check($mysqli) == true) {
+        // Is a logged user
+        if ($stmt = $mysqli->prepare("SELECT id, username, admin
+                                          FROM usuarios
+                                          WHERE id = ? AND admin = 1 LIMIT 1")) {
+            $stmt->bind_param('i', $user_id);
+            $stmt->execute();
+            $stmt->store_result();
+
+            if ($stmt->num_rows == 1) {
+                // Admin in the house
+                return true;
+            } else {
+                // Not admin
+                return false;
+            }
+        }
+    } else {
+        // Not admin
+        return false;
+    }
+}
+
+function can_edit($mysqli, $id) {
+    $user_id = $_SESSION['user_id'];
+
+    if ($stmt = $mysqli->prepare("SELECT id, admin
+                                          FROM usuarios
+                                          WHERE id = ? LIMIT 1")) {
+        $stmt->bind_param('i', $user_id);
+        $stmt->execute();
+        $stmt->store_result();
+
+        if ($stmt->num_rows == 1) {
+            $stmt->bind_result($user_id, $admin);
+            $stmt->fetch();
+
+            if ($_SESSION['user_id'] == $user_id &&
+                ($_SESSION['user_id'] == $id ||
+                 $admin == 1)) {
+                // Admin or owner of record
+                return true;
+            } else {
+                // Not admin or owner of record
+                return false;
+            }
+        } else {
+            // No valid user
+            return false;
+        }
+    }
+}
 ?>

@@ -1,13 +1,14 @@
 <?php
    include_once 'includes/db_connect.php';
    include_once 'includes/auth.php';
+   include_once 'includes/functions.php';
 
    sec_session_start();
 
    if (login_check($mysqli) == false) {
-        $_SESSION['login_error'] = 'Please login first to access this area.';
-        header('Location: ./index.php');
-        exit();
+   $_SESSION['login_error'] = 'Please login first to access this area.';
+   header('Location: ./index.php');
+   exit();
    }
    ?>
 
@@ -37,14 +38,64 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Logged as: <?php echo $_SESSION['username'] ?></a></li>
+            <li><a href="#">Logged as: <?php echo
+                                             $_SESSION['username'] ?></a></li>
+            <li>
+              <div class="navbar-collapse collapse">
+                <form method="post" action="logout.php" class="navbar-form navbar-right" role="form">
+                  <button type="submit" class="btn btn-success">Logout</button>
+                </form>
+              </div>
+            </li>
           </ul>
+          </div>
         </div>
       </div>
-    </div>
 
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+      <div class="container">
+        <h2 class="sub-header">Users</h2>
+        <a class="btn btn-lg btn-primary" href="add_user.php">Add User</a>
+        <?php
+           $sql = "SELECT * from usuarios";
+           $query = mysqli_query($mysqli, $sql);
+           ?>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Age</th
+                           <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php
+                 while($filas = mysqli_fetch_array($query)){
+                 echo "<tr>";
+                 echo "<td>" . fullname($filas) . "</td>";
+                 echo "<td>" . $filas['email'] . "</td>";
+                 echo "<td>" . gender($filas) . "</td>";
+                 echo "<td>" . age($filas) . "</td>";
+                 echo "<td>" . '<a class="btn btn-xs btn-info" href="show_user.php">Show</a>';
+                 if (can_edit($mysqli, $filas['id'])) {
+                 echo '<a class="btn btn-xs btn-warning" href="edit_user.php">Edit</a>';
+                 echo '<a class="btn btn-xs btn-danger" href="delete_user.php">Delete</a>';
+                 }
+                 echo "</td>";
+                 echo "</tr>";
+                 }
+                 ?>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <script src="js/jquery-1.11.0.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/app.js"></script>
   </body>
 </html>
