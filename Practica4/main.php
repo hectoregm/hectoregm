@@ -34,7 +34,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Practica 4 - Users</a>
+          <a class="navbar-brand" href="main.php">Practica 4 - Users</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -90,7 +90,8 @@
                  echo "<td>" . $filas['email'] . "</td>";
                  echo "<td>" . gender($filas) . "</td>";
                  echo "<td>" . age($filas) . "</td>";
-                 echo "<td>" . '<a class="btn btn-xs btn-info" href="show_user.php">Show</a>';
+                 echo "<td>" . '<a class="btn btn-xs btn-info"
+                 href="show_user.php?id=' . $filas['id'] . '">Show</a>';
                  if (can_edit($mysqli, $filas['id'])) {
                  echo '<a class="btn btn-xs btn-warning" href="edit_user.php">Edit</a>';
                  echo '<a class="btn btn-xs btn-danger" href="delete_user.php">Delete</a>';

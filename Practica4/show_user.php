@@ -9,6 +9,15 @@
    header('Location: ./index.php');
    exit();
    }
+
+   if (isset($_GET["id"])) {
+     $id = $_GET["id"];
+     $obj = $mysqli->query("SELECT * FROM usuarios WHERE id = '" . $id
+     . "'")->fetch_object();
+   } else {
+     header('Location: ./index.php');
+     exit();
+   }
    ?>
 
 <!doctype html>
@@ -33,7 +42,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="main.php">Practica 4 - Add User</a>
+          <a class="navbar-brand" href="main.php">Practica 4 - Show User</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -52,7 +61,7 @@
     </div>
 
     <div class="container">
-      <h2 class="sub-header">Add User</h2>
+      <h2 class="sub-header">User Info: <?= $obj->username ?></h2>
       <div class="row">
         <div class="col-md-4">
           <div id="failure" class="<?= $_SESSION['add_error'] ?
@@ -67,53 +76,15 @@
                  ?>
             </ul>
           </div>
-
-          <form method="post" action="add_user.php" role="form" id="add_form">
-            <div class="form-group">
-              <label for="username">Username</label>
-              <input name="username" type="text" class="form-control" id="username" placeholder="Username">
-            </div>
-            <div class="form-group">
-              <label for="first_name">First Name</label>
-              <input name="first_name" type="text" class="form-control" id="first_name" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <label for="parent_name">Parent Name</label>
-              <input name="parent_name" type="text" class="form-control" id="parent_name"
-                     placeholder="Parent Name">
-            </div>
-            <div class="form-group">
-              <label for="mother_name">Mother Name</label>
-              <input name="mother_name" type="text" class="form-control" id="mother_name" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input name="email" type="email" class="form-control" id="email" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input name="password" type="password" class="form-control" id="password" placeholder="Password">
-            </div>
-
-            <div class="form-group">
-              <label class="radio-inline">
-                <input name="gender" type="radio" id="gender1" value="0"> Female
-              </label>
-              <label class="radio-inline">
-                <input name="gender" type="radio" id="gender2" value="1"> Male
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label for="birthday">Birthday</label>
-              <input name="birthday" type="date" value="yyyy-mm-dd"
-                     onkeypress="return false" id="birthday">
-            </div>
-
-
-            <button class="submit btn btn-lg btn-primary btn-block"
-            type="submit" id="add_submit">Add User</button>
-          </form>
+          <p>Username: <?= $obj->username ?></p>
+          <p>Fullname: <?= $obj->nombre . ' ' . $obj->a_paterno . ' '
+          . $obj->a_materno ?></p>
+          <p>Username: <?= $obj->username ?></p>
+          <p>Email: <?= $obj->email ?></p>
+          <p>Password: <?= $obj->pass ?></p>
+          <p>Admin: <?= $obj->admin == 1 ? 'Yes' : 'No' ?></p>
+          <p>Gender: <?= $obj->sexo == 0 ? 'Female' : 'Male' ?></p>
+          <p>Birthday: <?= $obj->f_nacimiento ?></p>
         </div>
       </div>
     </div>
