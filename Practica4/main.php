@@ -53,8 +53,18 @@
       </div>
 
       <div class="container">
+        <div id="success" class="<?= $_SESSION['add_success'] ?
+                                             '' : 'hidden' ?> alert
+                                             alert-success fade in">
+          <?php
+             if (isset($_SESSION['add_success'])) {
+             echo '<h4>' . $_SESSION['add_success'] . '</h4>';
+             unset($_SESSION['add_success']);
+             }
+             ?>
+        </div>
         <h2 class="sub-header">Users</h2>
-        <a class="btn btn-lg btn-primary" href="add_user.php">Add User</a>
+        <a class="btn btn-lg btn-primary" href="add_user_form.php">Add User</a>
         <?php
            $sql = "SELECT * from usuarios";
            $query = mysqli_query($mysqli, $sql);
