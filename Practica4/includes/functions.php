@@ -6,7 +6,7 @@ function fullname($row) {
 }
 
 function gender($row) {
-    return $row['sexo'] == 0 ? 'Femenino' : 'Masculino';
+    return $row['sexo'] == 0 ? 'Female' : 'Male';
 }
 
 function age($row) {

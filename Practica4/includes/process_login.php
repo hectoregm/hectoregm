@@ -12,6 +12,7 @@ if (isset($_POST['username'], $_POST['password'])) {
 
     if (login($username, $password, $mysqli) == true) {
         // Login success 
+        $_SESSION['success'] = 'Welcome ' . $username . '!';
         header("Location: ../main.php");
         exit();
     } else {

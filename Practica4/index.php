@@ -51,6 +51,16 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
+        <div id="success" class="<?= $_SESSION['success'] ?
+                                             '' : 'hidden' ?> alert
+                                             alert-success fade in">
+          <?php
+             if (isset($_SESSION['success'])) {
+             echo '<h4>' . $_SESSION['success'] . '</h4>';
+             unset($_SESSION['success']);
+             }
+             ?>
+        </div>
         <?php
            if (isset($_SESSION['login_error'])) {
            echo '<div id="failure" class="alert alert-danger fade in">';

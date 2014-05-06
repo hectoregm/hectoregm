@@ -61,6 +61,7 @@
     </div>
 
     <div class="container">
+      <a class="btn btn-lg btn-default" href="main.php">< Back</a>
       <h2 class="sub-header">User Info: <?= $obj->username ?></h2>
       <div class="row">
         <div class="col-md-4">

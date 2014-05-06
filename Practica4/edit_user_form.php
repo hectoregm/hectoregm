@@ -60,6 +60,7 @@
     </div>
 
     <div class="container">
+      <a class="btn btn-lg btn-default" href="main.php">< Back</a>
       <h2 class="sub-header">Edit User</h2>
       <div class="row">
         <div class="col-md-4">
@@ -130,6 +131,7 @@
                      onkeypress="return false" id="birthday"
                      value="<?= $obj->f_nacimiento ?>" max="2000-05-05">
             </div>
+
 
 
             <button class="submit btn btn-lg btn-primary btn-block"
