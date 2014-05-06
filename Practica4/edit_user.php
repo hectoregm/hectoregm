@@ -17,6 +17,26 @@ if(isset($_POST["id"])){
         $gender = $_POST["gender"];
         $birthday = $_POST["birthday"];
 
+        if ($stmt = $mysqli->prepare("SELECT id
+                                  FROM usuarios
+                                  WHERE username = ? LIMIT 1")) {
+            $stmt->bind_param('s', $username);
+            $stmt->execute();
+            $stmt->store_result();
+
+            $stmt->bind_result($user_id);
+            $stmt->fetch();
+            if ($stmt->num_rows > 0 && $id != $user_id) {
+                $_SESSION['edit_error'] = 'Username ' . $username . ' is already in use.';
+                header("Location: ./edit_user_form.php?id=" . $id);
+                exit();
+            }
+        } else {
+            $_SESSION['edit_error'] = 'Error editing user.';
+            header("Location: ./edit_user_form.php?id=" . $id);
+            exit();
+        }
+
 
         if ($stmt = $mysqli->prepare("UPDATE usuarios SET username = ?,
             pass = ?, email = ?, nombre = ?, a_paterno = ?, a_materno = ?, sexo = ?, f_nacimiento = ? WHERE id = ?")) {
@@ -44,6 +64,6 @@ if(isset($_POST["id"])){
     }
 } else {
     $_SESSION['edit_error'] = 'Error updating user. Params';
-    header("Location: ./edit_user_form.php");
+    header("Location: ./main.php");
     exit();
 }

@@ -37,8 +37,8 @@ jQuery(function($) {
       alert_message += "<li>Username must have at least 3 characters.</li>";
     }
 
-    if(email.length < 3) {
-      alert_message += "<li>Email must have at least 3 characters.</li>";
+    if(email.length < 3 || !$('#email')[0].checkValidity()) {
+      alert_message += "<li>Email must be valid.</li>";
     }
 
     if(firstname.length < 3) {

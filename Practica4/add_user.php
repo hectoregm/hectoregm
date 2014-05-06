@@ -33,7 +33,6 @@ if(isset($_POST["username"])){
             $_SESSION['add_error'] = 'Username is already in use.';
             header("Location: ./add_user_form.php");
             exit();
-        } else {
         }
     } else {
         $_SESSION['add_error'] = 'Error adding user.';
