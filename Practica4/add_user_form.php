@@ -107,7 +107,7 @@
             <div class="form-group">
               <label for="birthday">Birthday</label>
               <input name="birthday" type="date" value="yyyy-mm-dd"
-                     onkeypress="return false" id="birthday">
+                     onkeypress="return false" id="birthday" max="2000-05-05">
             </div>
 
 

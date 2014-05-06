@@ -127,7 +127,8 @@
             <div class="form-group">
               <label for="birthday">Birthday</label>
               <input name="birthday" type="date"
-                     onkeypress="return false" id="birthday" value="<?= $obj->f_nacimiento ?>">
+                     onkeypress="return false" id="birthday"
+                     value="<?= $obj->f_nacimiento ?>" max="2000-05-05">
             </div>
 
 
