@@ -56,7 +56,7 @@ if(isset($_POST["username"])){
                           $gender,
                           $birthday);
         $stmt->execute();
-        $_SESSION['add_success'] = 'Registration successful for user: ' . $username;
+        $_SESSION['success'] = 'Registration successful for user: ' . $username;
         header("Location: ./main.php");
         exit();
     } else {

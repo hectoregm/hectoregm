@@ -4,12 +4,20 @@
 
    sec_session_start();
 
-   if (login_check($mysqli) == false) {
-   $_SESSION['login_error'] = 'Please login first to access this area.';
-   header('Location: ./index.php');
-   exit();
+   if (isset($_GET["id"])) {
+       $id = $_GET["id"];
+       if (login_check($mysqli) == false || can_edit($mysqli, $id)) {
+           $obj = $mysqli->query("SELECT * FROM usuarios WHERE id = '" . $id . "'")->fetch_object();
+       } else {
+           $_SESSION['error'] = 'You don\'t have permissions for this action';
+           header('Location: ./main.php');
+           exit();
+       }
+   } else {
+     header('Location: ./main.php');
+     exit();
    }
-   ?>
+?>
 
 <!doctype html>
 <html lang="en">
@@ -33,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="main.php">Practica 4 - Add User</a>
+          <a class="navbar-brand" href="main.php">Practica 4 - Edit User</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -52,67 +60,79 @@
     </div>
 
     <div class="container">
-      <h2 class="sub-header">Add User</h2>
+      <h2 class="sub-header">Edit User</h2>
       <div class="row">
         <div class="col-md-4">
-          <div id="failure" class="<?= $_SESSION['add_error'] ?
+          <div id="failure" class="<?= $_SESSION['edit_error'] ?
                                              '' : 'hidden' ?> alert alert-danger fade in">
             <h4>Oh no! There are errors!</h4>
             <ul class="alert_messages">
               <?php
-                 if (isset($_SESSION['add_error'])) {
-                 echo '<li>' . $_SESSION['add_error'] . '</li>';
-                 unset($_SESSION['add_error']);
+                 if (isset($_SESSION['edit_error'])) {
+                 echo '<li>' . $_SESSION['edit_error'] . '</li>';
+                 unset($_SESSION['edit_error']);
                  }
                  ?>
             </ul>
           </div>
 
-          <form method="post" action="add_user.php" role="form" id="user_form">
+          <form method="post" action="edit_user.php" role="form" id="user_form">
+            <input type="hidden" name="id" value="<?= $obj->id ?>">
             <div class="form-group">
               <label for="username">Username</label>
-              <input name="username" type="text" class="form-control" id="username" placeholder="Username">
+              <input name="username" type="text" class="form-control"
+                     id="username" placeholder="Username"
+                     value="<?= $obj->username ?>">
             </div>
             <div class="form-group">
               <label for="first_name">First Name</label>
-              <input name="first_name" type="text" class="form-control" id="first_name" placeholder="Name">
+              <input name="first_name" type="text"
+                     class="form-control" id="first_name"
+                     placeholder="Name" value="<?= $obj->nombre ?>">
             </div>
             <div class="form-group">
               <label for="parent_name">Parent Name</label>
               <input name="parent_name" type="text" class="form-control" id="parent_name"
-                     placeholder="Parent Name">
+                     placeholder="Parent Name" value="<?= $obj->a_paterno ?>">
             </div>
             <div class="form-group">
               <label for="mother_name">Mother Name</label>
-              <input name="mother_name" type="text" class="form-control" id="mother_name" placeholder="Name">
+              <input name="mother_name" type="text"
+                     class="form-control" id="mother_name"
+                     placeholder="Name" value="<?= $obj->a_materno ?>">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+              <input name="email" type="email" class="form-control"
+                     id="email" placeholder="Email" value="<?= $obj->email ?>">
             </div>
             <div class="form-group">
               <label for="password">Password</label>
-              <input name="password" type="password" class="form-control" id="password" placeholder="Password">
+              <input name="password" type="text"
+                     class="form-control" id="password"
+                     placeholder="Password" value="<?= $obj->pass ?>">
             </div>
 
             <div class="form-group">
               <label class="radio-inline">
-                <input name="gender" type="radio" id="gender1" value="0"> Female
+                <input name="gender" type="radio" id="gender1"
+                value="0" <?= $obj->sexo == 0 ? 'checked' : '' ?>> Female
               </label>
               <label class="radio-inline">
-                <input name="gender" type="radio" id="gender2" value="1"> Male
+                <input name="gender" type="radio" id="gender2"
+                value="1" <?= $obj->sexo == 1 ? 'checked' : '' ?>> Male
               </label>
             </div>
 
             <div class="form-group">
               <label for="birthday">Birthday</label>
-              <input name="birthday" type="date" value="yyyy-mm-dd"
-                     onkeypress="return false" id="birthday">
+              <input name="birthday" type="date"
+                     onkeypress="return false" id="birthday" value="<?= $obj->f_nacimiento ?>">
             </div>
 
 
             <button class="submit btn btn-lg btn-primary btn-block"
-            type="submit" id="add_submit">Add User</button>
+            type="submit" id="edit_submit">Edit User</button>
           </form>
         </div>
       </div>

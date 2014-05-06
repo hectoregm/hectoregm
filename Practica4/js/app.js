@@ -1,8 +1,8 @@
 jQuery(function($) {
-  $('#add_submit').click(function(event) {
+  $('#add_submit, #edit_submit').click(function(event) {
     event.preventDefault();
     if(validateForm()) {
-      $('#add_form').submit();
+      $('#user_form').submit();
     }
   });
 
@@ -19,7 +19,7 @@ jQuery(function($) {
     parentname = $('#parent_name').val();
     mothername = $('#mother_name').val();
     password = $('#password').val();
-    gender = $('input[name=gender]:checked', '#add_form').val();
+    gender = $('input[name=gender]:checked', '#user_form').val();
     birthday = $('#birthday').val();
 
     if(username === "" ||

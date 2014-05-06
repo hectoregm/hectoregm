@@ -53,13 +53,22 @@
       </div>
 
       <div class="container">
-        <div id="success" class="<?= $_SESSION['add_success'] ?
+        <div id="failure" class="<?= $_SESSION['error'] ?
+                                             '' : 'hidden' ?> alert alert-danger fade in">
+          <?php
+             if (isset($_SESSION['error'])) {
+             echo '<h4>' . $_SESSION['error'] . '</h4>';
+             unset($_SESSION['error']);
+             }
+             ?>
+        </div>
+        <div id="success" class="<?= $_SESSION['success'] ?
                                              '' : 'hidden' ?> alert
                                              alert-success fade in">
           <?php
-             if (isset($_SESSION['add_success'])) {
-             echo '<h4>' . $_SESSION['add_success'] . '</h4>';
-             unset($_SESSION['add_success']);
+             if (isset($_SESSION['success'])) {
+             echo '<h4>' . $_SESSION['success'] . '</h4>';
+             unset($_SESSION['success']);
              }
              ?>
         </div>
@@ -93,7 +102,8 @@
                  echo "<td>" . '<a class="btn btn-xs btn-info"
                  href="show_user.php?id=' . $filas['id'] . '">Show</a>';
                  if (can_edit($mysqli, $filas['id'])) {
-                 echo '<a class="btn btn-xs btn-warning" href="edit_user.php">Edit</a>';
+                 echo '<a class="btn btn-xs btn-warning"
+                 href="edit_user_form.php?id=' . $filas['id'] . '">Edit</a>';
                  echo '<a class="btn btn-xs btn-danger" href="delete_user.php">Delete</a>';
                  }
                  echo "</td>";
