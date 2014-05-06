@@ -6,6 +6,10 @@ jQuery(function($) {
     }
   });
 
+  $('.delete_user').click(function(event) {
+    return confirm('Do you really want to delete?');
+  });
+
   function validateForm() {
     var username, firstname, email, password, gender, alert_message;
     var birthday;

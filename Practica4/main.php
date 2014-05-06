@@ -104,7 +104,8 @@
                  if (can_edit($mysqli, $filas['id'])) {
                  echo '<a class="btn btn-xs btn-warning"
                  href="edit_user_form.php?id=' . $filas['id'] . '">Edit</a>';
-                 echo '<a class="btn btn-xs btn-danger" href="delete_user.php">Delete</a>';
+                 echo '<a class="btn btn-xs btn-danger delete_user"
+                 href="delete_user.php?id=' . $filas['id'] . '">Delete</a>';
                  }
                  echo "</td>";
                  echo "</tr>";

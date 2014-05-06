@@ -51,7 +51,7 @@ if(isset($_POST["id"])){
                               $birthday,
                               $id);
             $stmt->execute();
-            $_SESSION['success'] = 'Update successful for user: ' . $username;
+            $_SESSION['success'] = 'Successful update for user: ' . $username;
             header("Location: ./main.php");
             exit();
         } else {
@@ -63,7 +63,7 @@ if(isset($_POST["id"])){
         exit();
     }
 } else {
-    $_SESSION['edit_error'] = 'Error updating user. Params';
+    $_SESSION['error'] = 'Error updating user. Params';
     header("Location: ./main.php");
     exit();
 }
