@@ -11,7 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140525135440) do
+
+  create_table "auths", force: true do |t|
+    t.string   "username",               default: "", null: false
+    t.boolean  "admin"
+    t.string   "nombre"
+    t.string   "a_paterno"
+    t.string   "a_materno"
+    t.boolean  "sexo"
+    t.date     "f_nacimiento"
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "auths", ["email"], name: "index_auths_on_email", unique: true, using: :btree
+  add_index "auths", ["reset_password_token"], name: "index_auths_on_reset_password_token", unique: true, using: :btree
+  add_index "auths", ["username"], name: "index_auths_on_username", unique: true, using: :btree
 
   create_table "usuarios", force: true do |t|
     t.string  "username",     limit: 25, null: false
